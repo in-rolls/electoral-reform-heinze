@@ -31,5 +31,7 @@ jobs:
         with:
           r-version: '4.6.0'
           use-public-rspm: true
-      - run: Rscript -e 'dir.create("work/authors-library", recursive = TRUE); install.packages("lintr", lib = "work/authors-library")'
+      - name: Install lint dependencies
+        run: |
+          Rscript -e 'dir.create("work/authors-library", recursive = TRUE); install.packages(c("lintr", "dplyr", "estimatr", "ggplot2", "sensemakr"), lib = "work/authors-library")'
       - run: make lint-r
