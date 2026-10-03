@@ -19,7 +19,7 @@ The focused search found no official January 2020 ordinance establishing the rur
 
 ## Reconciliation with the deposited dates
 
-Appendix C.8, p.32 says indirect elections were passed and implemented in January 2020. President Q1/Q2 instead ask when the respondent was elected **this time as sarpanch**. Those dates need not be the council's general-election dates, the dates its election process began, or its term's starting date. [Paper appendix](../sources/appendix.pdf); [deposited instrument](../original/documentation/instruments/elite-surveys.docx).
+Appendix C.8, p.32 says indirect elections were passed and implemented in January 2020. President Q1/Q2 instead ask when the respondent was elected **this time as sarpanch**. Those dates need not be the council's general-election dates, the dates its election process began, or its term's starting date. [Paper appendix](../sources/appendix.pdf); [deposited instrument](https://dataverse.harvard.edu/api/access/datafile/11665676?format=original).
 
 Direct inspection of `original/data/analysis/elite_survey.csv` identifies these boundary records:
 

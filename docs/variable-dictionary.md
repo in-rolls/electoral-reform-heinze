@@ -2,7 +2,7 @@
 
 The deposited analytical variables reproduce response summaries, but the package does not contain the original observational survey responses or their cleaning program. `original/code/clean.R` cleans only the separate vignette experiment. Coding below therefore distinguishes the documented rule from an independently verified raw-to-analysis transformation. The latter is unavailable for the observational outcomes.
 
-Sources: [paper](../sources/paper.pdf), [appendix](../sources/appendix.pdf), [codebook](../original/documentation/codebook.docx), [elite instruments](../original/documentation/instruments/elite-surveys.docx), [citizen instrument](../original/documentation/instruments/citizen-survey.docx). Appendix page numbers are the printed appendix pages. Questionnaire wording below preserves the deposited English wording, including awkward grammar. This deposit describes its instruments as the original wording for variables used in the analysis; it is not a complete export of all questions fielded.
+Sources: [paper](../sources/paper.pdf), [appendix](../sources/appendix.pdf), [codebook](https://dataverse.harvard.edu/api/access/datafile/11665689?format=original), [elite instruments](https://dataverse.harvard.edu/api/access/datafile/11665676?format=original), [citizen instrument](https://dataverse.harvard.edu/api/access/datafile/11665607?format=original). Appendix page numbers are the printed appendix pages. Questionnaire wording below preserves the deposited English wording, including awkward grammar. This deposit describes its instruments as the original wording for variables used in the analysis; it is not a complete export of all questions fielded.
 
 ## Population, observations, dates, and missing values
 
