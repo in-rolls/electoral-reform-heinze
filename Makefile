@@ -2,9 +2,9 @@ PYTHON ?= python3
 RSCRIPT ?= Rscript
 export R_LIBS_USER = $(CURDIR)/work/authors-library
 
-.PHONY: all verify authors audit inference critical note test lint format deps
+.PHONY: all verify authors audit inference critical recent note test lint format deps
 
-all: verify authors audit inference critical note lint test
+all: verify authors audit inference critical recent note lint test
 
 verify:
 	$(PYTHON) analysis/preserve.py
@@ -23,6 +23,10 @@ inference: verify
 critical: verify
 	$(RSCRIPT) analysis/critical_diagnostics.R > results/critical/latest-run.log 2>&1
 	$(PYTHON) analysis/write_assessment.py
+
+recent: verify
+	$(RSCRIPT) analysis/recent_cohorts.R > results/recent/latest-run.log 2>&1
+	$(PYTHON) analysis/write_recent.py
 
 note:
 	$(PYTHON) analysis/write_note.py

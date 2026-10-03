@@ -3,6 +3,7 @@
 Replication of Alyssa R. Heinze, **“Democratic Deepening or Elite Persistence? How Local Elites Adapt to Electoral Reform in Rural India”**, and an arithmetic-first audit of its headline claims.
 
 - [Four-section audit note](docs/audit-note.md)
+- [What survives when older election cohorts are removed?](docs/recent-cohort-audit.md)
 - [Private critical assessment of the paper's argument](docs/private-assessment.md)
 - [Claim ledger, defenses and adjudicated verdicts](docs/claim-ledger.md)
 - [Follow-up sensitivity, SC-quota and experiment diagnostics](docs/critical-diagnostics.md)
@@ -21,6 +22,12 @@ elite capture. It also documents bundled and changing statutory powers, limits o
 gender-quota sensitivity benchmark, and the gap between vignette expectations and actual
 institutional mediation. Qualitative evidence does document adaptation in selected cases;
 the experiment's sample counts and main preregistered analyses reconcile.
+
+The latest empirical follow-up separates removing early indirect councils from restricting
+both regimes to recent election years. Shared-tenure and perceived-influence contrasts
+weaken as older cohorts are removed, while several other associations persist. All 17
+survey outcomes, support counts, and alternative inference results are retained.
+Run `make recent` to regenerate this comparison from the existing baseline audit outputs.
 
 ## Reproduce locally
 

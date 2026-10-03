@@ -1,0 +1,28 @@
+Registered S3 method overwritten by 'clubSandwich':
+  method    from    
+  bread.mlm sandwich
+Warning: Please note that the seeding behavior for random number generation for
+`boottest()` has changed with `fwildclusterboot` version 0.13.
+
+It will no longer be possible to exactly reproduce results produced by versions
+lower than 0.13.
+
+If your prior results were produced under sufficiently many bootstrap
+iterations, none of your conclusions will change. For more details about this
+change, please read the notes in
+[news.md](https://cran.r-project.org/web/packages/fwildclusterboot/news/news.html).
+This warning is displayed once per session.
+Too guarantee reproducibility, don't forget to set a global random seed
+**both** via `set.seed()` and `dqrng::dqset.seed()`.
+This message is displayed once every 8 hours.
+Completed drop_early_indirect
+Completed since_2018
+Warning: There are only 2048 unique draws from the rademacher distribution for 11
+bootstrap clusters. Therefore, B = 2048 with full enumeration. Consider using
+webb weights instead. Further, note that under full enumeration and with B =
+2048 bootstrap draws, only 2^(#clusters - 1) = 1024 distinct t-statistics and
+p-values can be computed. For a more thorough discussion, see Webb `Reworking
+wild bootstrap based inference for clustered errors` (2013).
+Completed since_2019
+Completed since_2020
+Completed since_2021
