@@ -1,0 +1,13 @@
+"variable","male","maratha","assigned","observed","missing"
+"authority",0,0,599,593,6
+"authority",0,1,589,583,6
+"authority",1,0,570,567,3
+"authority",1,1,608,604,4
+"pliability",0,0,599,594,5
+"pliability",0,1,589,586,3
+"pliability",1,0,570,567,3
+"pliability",1,1,608,600,8
+"backlash",0,0,599,589,10
+"backlash",0,1,589,587,2
+"backlash",1,0,570,566,4
+"backlash",1,1,608,604,4

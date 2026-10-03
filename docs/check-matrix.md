@@ -54,3 +54,20 @@ Rejected or narrowed criticisms include: parity disproves a relative authority g
 ## Data needed to finish the unavailable checks
 
 An anonymized extension can supply district/taluka IDs, verified council term-start and interview dates, original tenure-response categories, meeting attendance/full actor responses, citizen multinomial categories, and administrative event/censor dates without disclosing village names. Raw-to-analysis cleaning code would permit a literal coding audit. Candidate and nomination records are needed to resolve which selection stage “unopposed” describes. None of these records has been requested from third parties.
+
+## Follow-up critical assessment
+
+The [private assessment](private-assessment.md) and [claim ledger](claim-ledger.md) extend
+the numerical audit to the paper's causal argument, author defenses and rival explanations.
+
+| Follow-up check | Result and coverage |
+|---|---|
+| Definition of capture versus proxies | Officeholder characteristics identify composition; selected qualitative histories document capture and adaptation. Continuing elite control throughout the survey sample is not established. |
+| Statutory bundle and succession | Verified agenda/budget/removal changes, later generalization of comparable powers, and a changed direct-president vacancy rule with grandfathering. No numerical effect attributed to these changes. |
+| Sensitivity defense | All 17 original models and 51 bounds executed independently and matched. Both sides of the quota benchmark and unbenchmarked robustness values exported; ordinary-versus-clustered inference distinction explicit. |
+| SC authority and complementarity | Five within-SC estimates and direct treatment-by-quota tests retained. Authority can increase without Maratha accession; amplification by quotas is not statistically resolved. |
+| Preregistration | OSF metadata and unchanged attachment preserved; attachment matches digest in registration. Declared post-implementation/pre-data-access timing and main model correspondence verified; unprovided qualitative follow-ups and assignment logs remain unauditable. |
+| Experiment denominators | Raw, assignment, outcome and adjusted counts reconciled; original binary recoding and unadjusted variances independently tested. Apparent N error rejected. |
+| Experiment balance | Extreme Table F.3 HC2 Wald tests localized to sparse religion cells; gender contingency imbalance retained. Assignment logs remain unavailable; no records removed from substantive models. |
+| External validity | Appendix G expert expectations and cross-state accounts support plausibility, not independent effect replication; the author's suggestive qualification retained. |
+| Published caption | Appendix C.1 reverses the regression direction in its note; deposited code and table are correct and numerical results unchanged. |

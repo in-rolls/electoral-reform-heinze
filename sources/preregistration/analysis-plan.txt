@@ -1,0 +1,577 @@
+         President authority and social privilege:
+    A survey experiment among voters in Maharashtra,
+                          India
+                                 Alyssa René Heinze
+                                   October 18, 2024
+
+
+Contents
+1   Overview                                                                              2
+
+2   Pilot results                                                                         2
+
+3   Design                                                                                3
+    3.1 Study population, sampling, survey design . . . . . . . . . . . . . . . . .       3
+    3.2 Treatment groups and randomization . . . . . . . . . . . . . . . . . . . .        4
+
+4   Outcomes                                                                              5
+
+5   Hypotheses and analysis strategy                                                      7
+    5.1 Covariates and balance . . . . . . . . . . . . . . . . . . . . . . . . . . . .   10
+    5.2 Power calculations . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .   12
+
+Appendix 1: Voter Survey Stratification                                                  13
+
+Appendix 2: Marathi and Hindi Translations                                               14
+
+
+
+
+                                             1
+1     Overview
+Not all politicians are equally able to influence decision-making processes and policy
+outcomes (Tolentino and Cruz 2022; Purohit 2021; Heinze, Brulé and Chauchard 2024).
+When dominant groups with various sources of social privilege capture political institu-
+tions through elected office, this may lead them to accrue an authority advantage. This
+survey experiment builds on existing literatures on elite capture and political inequality
+by focusing on two factors that may affect leaders’ authority: leader gender and social
+class (here: caste).
+        I employ a survey experiment with a 2x2 factorial design that randomly varies the
+gender and social class of hypothetical local politicians in order to probe their causal im-
+pact on political authority, pliability, and backlash in a face-to-face survey of 2340 voters
+in Maharashtra, India. This pre-analysis plan was written after project implementation,
+but before data was received by the author.1
+
+
+2     Pilot results
+The experimental stimuli and outcome questions were piloted from 12-13 July 2024 in
+Jalgaon district among a gender- and caste-balanced sample of 10 citizens, 5 living in
+the Jalgaon City Assembly constituency and 5 in Jalgaon Rural Assembly Constituency,
+all familiar with rural politics. It was also piloted on 22 July 2024 in the Jalgaon Rural
+Constituency among 4 voters.
+        Piloting served three purposes: manipulation checks of the gender and caste
+variables, construct validity of the outcome variables, and development of options for
+outcome variables. Table 1 summarizes how the results of the pilot study have informed
+the design of the main study.
+    1 The de-identified survey data will be received by the author from Pratik Mahajan upon pre-
+
+registration.
+
+
+
+
+                                               2
+                                  Table 1: Pilot study results
+ Question                         Pilot result                   Design decision
+ Do the gendered first names      Yes, all respondents cor-      Retain these gendered first
+ (Bharti and Rohit) lead re-      rectly identify Bharti as a    names for the gender treat-
+ spondents to correctly iden-     female politician and Rohit    ment. Remove gender ma-
+ tify the gender of the politi-   as a male politician.          nipulation check after vi-
+ cian?                                                           gnette due to space con-
+                                                                 straints.
+ Do      the    caste-specific    Compared to other names        Retain Marathe as the dom-
+ surnames (Kamble and             like Patil, Marathe leads      inant caste surname, and
+ Marathe) lead respondents        respondents to universally     add numerical dominance
+ to correctly identify the        identify the politician as     of the Maratha group as
+ caste of the politician?         Maratha. However, some         a fixed condition in the
+                                  pushback against the idea      vignette, so that it is
+                                  of the ”dominant” or ”sub-     clear that Kamble would be
+                                  ordinate” caste in a village   subordinate and Marathe
+                                  in the absence of informa-     would be dominant. Re-
+                                  tion about population pro-     move caste manipulation
+                                  portions.                      check after vignette due to
+                                                                 space constraints.
+ What open-ended responses        It is possible to categorize   Developed       sub-category
+ do respondents give in re-       follow-up responses into 4-5   questions based on these 4-
+ sponse to outcome ques-          categories per sub-question.   5 buckets per sub-question.
+ tions?                                                          Allow participants to ”se-
+                                                                 lect all” where relevant.
+
+
+
+3     Design
+
+3.1   Study population, sampling, survey design
+
+2340 voters above the age of 18 were surveyed across 18 state assemblies in North Ma-
+harashtra. The survey used a stratified random sampling strategy for surveying voters.
+100 voters from each of the 18 constituencies, and then an additional 340 voters in the
+3 urban centers were sampled to ensure a balance of rural and urban voters; additional
+Dalit voters in the Bhusawal constituency and other constituencies were sampled, for a
+total targeted sample of 2340 voters. The exact gender and ethnic stratification of vot-
+ers across the 18 constituencies are included in Appendix 1. Within each constituency,
+
+
+
+
+                                               3
+one village or town was selected per 20 respondents, for a total of 4 to 6 sites per con-
+stituency, while for the urban centers, all the respondents are sampled in the same city.
+These sites are selected based on their ethnic composition and areas where grassroots
+organizations are active in voter mobilization. To achieve the stratified quota sample, a
+random walk method was employed where enumerators turn left when entering the area
+and survey every fourth individual until the desired gender and ethnic quota within the
+location is met. No payment was provided for participation in the survey. The survey
+took place from late August 2024 to mid October 2024.
+      The survey included several experimental modules after pre-treatment covariates.
+The order of the experimental modules – and thus of the experimental module of interest
+in this study – was randomized.
+
+
+3.2   Treatment groups and randomization
+
+The experiment features a vignette of a hypothetical village president, where the gender
+and caste of the president vary, with two possibilities each (2x2 factorial design). Par-
+ticipants are randomly assigned using simple randomization (with equal probabilities of
+assignment to condition) to 1 of 4 conditions, displayed in Table 2.
+
+                            Table 2: Experimental conditions
+                     Condition    Gender            Caste
+                        1         Female    Maratha (Dominant)
+                        2          Male     Maratha (Dominant)
+                        3         Female    Dalit (Non-dominant)
+                        4          Male     Dalit (Non-dominant)
+
+
+      In particular, gender of the president was manipulated using she/her or he/him
+pronouns combined with an obviously female (Bharti) or male (Rohit) first name in
+this context. Caste of the president was manipulated using surnames with obvious
+caste connotations in this context: Marathe (Maratha) or Kamble (Dalit). Three other
+dimensions are kept constant: the age of the president (the mean age of the president
+
+
+
+                                           4
+sample from the previous study), the fact that the village is numerically dominated
+by Marathas, and the amount of time for which the president has been in office (1
+year). The vignette wording (in English: the surveyed version is in Marathi or Hindi,
+depending on the respondent’s preferred language) is as follows, with words in brackets
+varying according to the experimental condition.2
+
+
+       Now, I’ll tell you about the president of a village council here in Maharash-
+       tra. I’m interested in your opinions about this president. [Bharti/Rohit]
+       [Marathe/Kamble] is a 42-year old [female/male] president. [She/he] is a
+       [Maratha/Dalit] president, in a village where more than half of people are
+       Maratha. [She/he] has been the president of the village council for one year.
+
+
+
+       Based on your experience and knowledge of the way village councils work in
+       reality on the ground, what type of experience do you think [Bharti/Rohit]
+       [Marathe/Kamble] will have?
+
+
+
+4     Outcomes
+Three outcomes of interest – authority, pliability, and backlash – are collected directly
+on the screen following the experimental vignette.3 I detail them below, as well as how
+I plan to code them based on responses.
+
+
+    1. Authority.
+
+          • Question:
+
+                – Imagine there are some important decisions to be made in the village.
+                  As you probably know, sometimes other people – influential people in
+    2 See Appendix 2 for the Marathi and Hindi versions of the vignette.
+    3 See Appendix 2 for Marathi and Hindi versions of outcome questions.
+
+
+
+
+                                                   5
+             the village, village elders, other council members, or family members –
+             step in and take village decisions in the place of the president or are
+             generally more active than the president. Sometimes however it is the
+             case that the president is the most influential actor. In this village, do
+             you think that a president like [Bharti/Rohit] [Marathe/Kamble] would
+             be the one who is the most active in taking village decisions, or do you
+             think it would be someone else?
+
+     • Response options:
+
+          – President
+
+          – Someone else
+
+     • Coding:
+
+          – President = 1, Someone else = 0
+
+2. Pliability (propensity to resign).
+
+     • Question:
+
+          – As you probably know, in almost every village, there are generally some
+             influential people when it comes to village affairs, for example a chawri
+             group, or bhauki leaders. Imagine that influential people in this village
+             ask [Bharti/Rohit] [Marathe/Kamble] to resign from their post as presi-
+             dent. Do you think that a president like [Bharti/Rohit] [Marathe/Kam-
+             ble] would accept this request and resign, or would [Bharti/Rohit] [Marathe/Kam-
+             ble] resist the request?
+
+     • Response options:
+
+          – Resign
+
+          – Resist
+
+
+
+
+                                         6
+        • Coding:
+
+             – Resign = 1, Resist = 0
+
+    3. Backlash.
+
+        • Question:
+
+             – Now imagine that [Bharti/Rohit] [Marathe/Kamble] becomes quite pow-
+               erful as a president. [Bharti/Rohit] [Marathe/Kamble] makes [her/his]
+               own decisions about what is best for the village, which are not always
+               in line with what the influential villagers want, and [she/he] refuses to
+               resign from [her/his] position as president. Do you think that [Bhar-
+               ti/Rohit] [Marathe/Kamble] would likely face backlash from influential
+               people in the village? For example, threats, bullying, or violence?
+
+        • Response options:
+
+             – Yes, it is likely
+
+             – No, it is not likely
+
+        • Coding:
+
+             – Yes = 1, No = 0
+
+
+5    Hypotheses and analysis strategy
+This section details four main and two secondary hypotheses to be tested, as well as
+two exploratory analyses. All quantitative analyses will be run via OLS regression,
+with Huber-White heteroskedasticity-robust standard errors, and statistical significance
+will be assessed at the 5 % level. I will report covariate-adjusted estimates – my pre-
+ferred models – in the main paper and unadjusted difference in means estimates in the
+appendix.
+       The four main hypotheses and their analysis procedures are as follows:
+
+
+
+                                           7
+• M1. The male advantage in authority. I expect that relative to female presi-
+  dents, hypothetical male presidents will be more likely to be perceived to possess
+  authority (Outcome 1).
+
+     – Estimation: Authority = β 0 + β 1 male + γX + e
+
+     – Quantity of interest: β 1 , expected to be positive
+
+     – X: Vector of covariates described in the section below
+
+     – Note: the ATE is a weighted average across the dominant and non-dominant
+        caste treatments.
+
+• M2. The dominant caste advantage in authority. I expect that relative to Dalit
+  presidents, hypothetical Maratha presidents will be more likely to be perceived to
+  possess authority (Outcome 1).
+
+     – Estimation: Authority = β 0 + β 1 Maratha + γX + e
+
+     – Quantity of interest: β 1 , expected to be positive
+
+     – X: Vector of covariates described in the section below
+
+     – Note: the ATE is a weighted average across the female and male treatments.
+
+• M3. The male advantage in pliability. I expect that relative to female presidents,
+  hypothetical male presidents will be less likely to be perceived to be willing to
+  resign (Outcome 2).
+
+     – Estimation: Pliability = β 0 + β 1 male + γX + e
+
+     – Quantity of interest: β 1 , expected to be negative
+
+     – X: Vector of covariates described in the section below
+
+     – Note: the ATE is a weighted average across the dominant and non-dominant
+        caste treatments.
+
+
+
+                                        8
+  • M4. The dominant caste advantage in pliability. I expect that relative to Dalit
+     presidents, hypothetical Maratha presidents will likely to be perceived to be willing
+     to resign (Outcome 2).
+
+        – Estimation: Pliability = β 0 + β 1 Maratha + γX + e
+
+        – Quantity of interest: β 1 , expected to be negative
+
+        – X: Vector of covariates described in the section below
+
+        – Note: the ATE is a weighted average across the female and male treatments.
+
+      In addition to the four main hypotheses about gender and caste-based authority
+and pliability differentials, I pre-register two secondary hypotheses and their analysis
+procedures.
+
+  • S1. The dominant caste advantage in backlash. I expect that relative to Dalit
+     presidents, hypothetical Maratha presidents will be less likely to be perceived to
+     face backlash (Outcome 3).
+
+        – Estimation: Backlash = β 0 + β 1 Maratha + γX + e
+
+        – Quantity of interest: β 1 , expected to be negative
+
+        – X: Vector of covariates described in the section below
+
+        – Note: the ATE is a weighted average across the female and male treatments.
+
+  • S2. The male advantage in backlash? Relative to female presidents, it is unclear
+     whether hypothetical male presidents will be less likely to be perceived to face
+     backlash (Outcome 3). On one hand, it could be negative, if regardless of commu-
+     nity, women who gain power are perceived as a threat to dominance. On the other
+     hand, it could be zero, if women who gain power within the dominant caste-group
+     are not perceived as a threat to dominance. I expect a potential gender effect to be
+
+
+
+
+                                           9
+      weaker than the caste effect for this outcome, as political violence in this context
+      often occurs among community lines.
+
+        – Estimation: Backlash = β 0 + β 1 male + γX + e
+
+        – Quantity of interest: β 1 , could be 0 or negative.
+
+        – X: Vector of covariates described in the section below
+
+        – Note: the ATE is a weighted average across the dominant and non-dominant
+           caste treatments.
+
+       Finally, I will perform two exploratory analyses. First, I expect gender dominance
+and caste dominance to interact, with order of advantage being Maratha men, Maratha
+women, Dalit men, Dalit women for authority and pliability outcomes. However, this
+design is underpowered to detect interaction effects, so I will display bar graphs with
+means for each identity category as a suggestive analysis. Second, I will investigate the
+qualitative responses to questions 1, 2 and 3, that follow up to ask ”why” respondents
+gave the response that they did.
+
+
+5.1   Covariates and balance
+
+In the appendix, I will report balance for the following covariates: locality (urban vs.
+rural), age, gender, religion, caste, education, prior voter participation, self-reported
+knowledge on local politics, and a gender norms indicator. These are the covariates that
+I will include in my regression models.
+       The covariates will be coded as follows:
+
+  • Locality (rural area): Factor variable with two levels: Village and Nagar palika or
+      Mahanagar palika.
+
+  • Age: continuous variable.
+
+
+
+
+                                           10
+  • Gender: Factor variable with two levels: Male, female.
+
+  • Religion: Factor variable with seven levels: Hindu, Muslim, Christian, Buddhist,
+      Sikh, Adviasi, and Jain. This is subject to adjustement based on the sample
+      demographics.
+
+  • Caste: Factor variable with six levels: Adivasi, Dalit, OBC, Maratha, VJNT,
+      and other general caste. This is subject to adjustement based on the sample
+      demographics.
+
+  • Education: Factor variable with three levels: Primary school or less, secondary
+      school, undergraduate and above. This is subject to adjustement based on the
+      sample demographics.
+
+  • Prior voter participation: Factor variable with two levels: voted in 2019 state
+      elections or did not vote.
+
+  • Self-reported knowledge on local politics: Factor variable with two levels: Not
+      knowledgeable at all or reports having some knowledge.
+
+  • Gender norms: The value given for the following question:
+
+        – As per your understanding, approximately what percent (on a scale of 0
+           to 100) of the inhabitants in your locality think that it is appropriate that
+           women vote? (on a scale of 0 to 100)
+
+       In the appendix, I will document analyses that probe balance. I will present
+the proportion of voters and standard deviation for each covariate level across the four
+treatment groups. I will assess balance using F-tests of global significance for these
+covariates for each treatment group, via regressing each of the four treatment group
+indicators on these covariates, extracting the F-statistic, and its p-value. Failing to
+reject the null at the 5 percent level supports balance.
+
+
+
+                                           11
+5.2   Power calculations
+
+Sample size was fixed and not under control of the researcher. Care was thus taken
+to increase the intensity of the treatments in order to better chances at higher levels
+of power. In addition, the preferred specifications include covariate adjustment to try
+to increase power as blocking was not feasible in the study design. With a sample size
+of 2,340 voters, I should be able to detect effects for main hypotheses (M1 and M2) of
+0.125 of a standard deviation of the outcome, setting alpha at 0.05 (power= 0.80).4
+
+
+References
+Heinze, Alyssa R., Rachel Brulé and Simon Chauchard. 2024. “Who Actually Governs?
+  Gender Inequality and Political Representation in Rural India.” Forthcoming: Journal
+  of Politics .
+
+Purohit, Bhumi. 2021. “Can Female Politicians Get Work Done?” Manuscript .
+
+Tolentino, Charis and Cesi Cruz. 2022. “Gender, Social Recognition, and Political In-
+  fluence.” Working paper .
+
+
+
+
+  4 EGAP power calculator was used for these estimates.
+
+
+
+
+                                               12
+     Appendix 1: Voter Survey Targeted Stratification
+
+     Constituency Name   Reserved   Total Respon- Male   Female   Semi-         Rural   Muslim   Dalit (SC)   Adivasi (ST)   OBC   and
+                         Status     dents                         urban/Urban                                                GENERAL
+     Akkalkuwa           ST         100           50     50       40            60      20       0            60             20
+     Shahada             ST         100           50     50       40            60      20       20           40             20
+     Nandurbar           ST         100           50     50       40            60      20       0            40             40
+     Nawapur             ST         100           50     50       40            60      0        20           60             20
+     Sakri               ST         120           60     60       40            80      20       20           40             40
+     Baglan              ST         120           60     60       20            100     0        20           60             40
+     Shirpur             ST         100           50     50       10            90      0        20           50             30
+     Sindkheda           General    100           50     50       20            80      0        20           0              80
+     Dhule Rural         General    100           50     50       0             100     0        20           0              80
+     Dhule City          General    200           100    100      200           0       100      20           0              80
+     Malegaon Central    General    220           110    110      220           0       120      20           0              80
+     Malegaon Outer      General    120           60     60       0             120     40       20           0              60
+     Chopda              ST         100           50     50       20            80      20       20           40             20
+13   Amalner             General    120           60     60       60            60      20       20           0              80
+     Jalgaon Rural       General    100           50     50       0             100     0        20           0              80
+     Jalgaon City        General    220           110    110      220           0       100      20           20             80
+     Raver               General    120           60     60       40            80      40       20           40             20
+     Bhusawal            SC         200           100    100      80            120     20       120          20             40
+     Total                          2340          1170   1170     1090          1250    540      420          470            910
+Appendix 2: Marathi and Hindi Translations
+The survey was carried out in Marathi or Hindi, depending on the preferences of the
+voter. North Maharashtra is a region with some linguistic heterogeneity as it borders
+non-Marathi speaking states and also has a non-negligible indigenous population, though
+the majority of residents in the region still speak and prefer Marathi, the official language
+of Maharashtra.
+
+
+Vignette: Marathi
+
+      आता मी तुम्हाला आपल्या महाराष्ट्रातल्या गावातील सरपंचाबद्दल सांगणार आहे. मला या सर-
+      पंचाबद्दल तुमचे मत जाणून घेण्यात रस आहे. [भारती/रोहित] [मराठे /कांबळे ] [त्या/ते] एक
+      42 वर्षीय [महिला/पुरुष] सरपंच आहेत. [त्या/ते] [मराठा/दलित] सरपंच आहेत. अश्या एका
+      गावाचे सरपंच आहे जिथे अर्ध्यापेक्षा जास्त लोक मराठा आहेत. [त्या/ते] मागील एक वर्षांपासून
+      सरपंच आहेत.
+
+
+      ग्राम पंचायत कशी काम करते याची माहिती आणि तुमचा आजपर्यंतचा अनुभव यावरून मला
+      सांगा [भारती/रोहित] [मराठे /कांबळे ] ह्यांचा एक सरपंच म्हणून काय अनुभव असेल?
+
+
+Vignette: Hindi
+
+      अब मैं आपको हमारे महाराष्ट्र के गांव के सरपंच के बारे में बताने वाला हूँ। [भारती/रोहित] [मरा-
+      ठे /कांबळे ] ये एक 42 वर्षीय [महिला/पुरुष] सरपंच हैं। वह [मराठा/दलित] सरपंच हैं। वह ऐसे
+      एक गांव के सरपंच हैं जहां आधे से ज्यादा लोग मराठा हैं। वह पिछले एक वर्ष से सरपंच हैं।
+
+
+      ग्राम पंचायत कैसे काम करती है इसकी जानकारी और आपके अब तक के अनुभव के आधार
+      पर, बताएं कि एक सरपंच के रूप में [मराठे /कांबळे ] का अनुभव कैसा होगा?
+
+
+
+
+                                                   14
+Outcomes: Marathi
+
+  1. आता कल्पना करा गावात काही महत्वाचे निर्णय घेतल्या जाणार आहेत. जसा तुम्हाला माहिती असेल,
+     कधी कधी इतर गावातील लोक जसे कि - प्रभावी लोक, जेष्ठ मंडळी, इतर सभासद किंवा कुटुं बातील
+     सदस्य - पुढे येतात आणि सरपंचाला डावलून निर्णय घेतात किंवा सरपंचापेक्षा तेच जास्त सक्रिय असतात.
+     परंतु कधी कधी सरपंच सगळ्यात जास्त प्रभावी आहेत. अश्या एखाद्या गावात तुम्हाला काय वाटतं,
+     [भारती/रोहित] [मराठे /कांबळे ] निर्णय घेऊ शकतील कि त्यांच्या ऐवजी दुसरेच कोणी निर्णय घेतील?
+
+       • सरपंच
+
+       • इतर कोणीतरी
+
+  2. जसा तुम्हाला माहिती असेल, जवळपास प्रत्येक गावात, गावातला कारभार बघायला अनेक प्रभावी लोक
+     असतात जसे चावडीवर बसणारी मंडळी किंवा भाऊबंदकी मधील लोक. कल्पना करा, अश्याच काही
+     मंडळींनी [भारती/रोहित] [मराठे /कांबळे ] सरपंच पदाचा राजीनामा द्यायला सांगितले. तुम्हाला काय
+     वाटतं, [भारती/रोहित] [मराठे /कांबळे ] सरपंच पदाचा, विनंती स्वीकारून, राजीनामा दे तील कि त्याला
+     विरोध करतील?
+
+       • राजीनामा दे तील
+
+       • ते विरोध करतील
+
+  3. आता कल्पना करा, [भारती/रोहित] [मराठे /कांबळे ] एक प्रभावशाली सरपंच [झाल्या/झाले]. [त्या/ते]
+     गावासाठीचे योग्य निर्णय घेतात जे गावातील प्रभावी लोकांच्या नेहमीच मर्जीतले असेलच असा नाही
+     आणि त्या राजीनामा दे ण्यास नकार दे तात. तुम्हाला वाटतं का, [भारती/रोहित] [मराठे /कांबळे ] ला
+     गावातील प्रभावशाली व्यक्तीं (जसे - चावडीवर बसणारी मंडळी किंवा भाऊबंदकी मधील लोक) विरोध
+     करतील? उदाहरणार्थ, धमक्या, छळ, किंवा हिंसा?
+
+       • हो, शक्यता आहे
+
+       • नाही, शक्यता नाही
+
+
+
+
+                                               15
+Outcomes: Hindi
+
+  1. अब कल्पना कीजिए कि गांव में कुछ महत्वपूर्ण निर्णय लिए जाने वाले हैं। जैसा कि आपको पता होगा,
+     कभी-कभी अन्य गांव के लोग जैसे - प्रभावशाली लोग, वरिष्ठ नागरिक, अन्य सदस्य या परिवार के सदस्य
+     - आगे आते हैं और सरपंच को नजरअंदाज करके निर्णय लेते हैं या सरपंच से अधिक सक्रिय होते हैं।
+     लेकिन कभी-कभी, सरपंच सबसे प्रभावशाली व्यक्ति होते हैं। ऐसे किसी गांव में, आपको क्या लगता है
+     [भारती/रोहित] [मराठे /कांबळे ] निर्णय ले पाएंगे / पाएंगी या उनके बजाय कोई और निर्णय लेगा?
+
+       • सरपंच
+
+       • कोई और
+
+  2. जैसा कि आपको पता होगा, लगभग हर गांव में, गांव के कामकाज को दे खने के लिए कई प्रभावशाली
+     लोग होते हैं, जैसे चावड़ी पर बैठने वाले लोग या भाऊबंदकी के सदस्य। कल्पना करें, ऐसे ही कुछ लोगों
+     ने [भारती/रोहित] [मराठे /कांबळे ] से सरपंच पद से इस्तीफा दे ने के लिए कहा। आपको क्या लगता है,
+     [भारती/रोहित] [मराठे /कांबळे ] सरपंच पद से इस्तीफा दे ने की विनती स्वीकार करेंगे / करेंगी या उसका
+     विरोध करेंगे / करेंगी ?
+
+       • इस्तीफा दे दें गे
+
+       • विरोध करेंगे
+
+  3. अब कल्पना कीजिए [भारती/रोहित] [मराठे /कांबळे ] एक प्रभावशाली सरपंच हैं। वह गांव के लिए सही
+     निर्णय लेते/ लेती हैं, जो हमेशा गांव के प्रभावशाली लोगों की मर्जी के अनुसार नहीं होते, और वे इस्तीफा
+     दे ने से इंकार करते/करती हैं। क्या आपको लगता है कि [भारती/रोहित] [मराठे /कांबळे ] उनको गांव के
+     प्रभावशाली व्यक्तियों (जैसे - चावड़ी पर बैठने वाले लोग या भाऊबंदकी के सदस्य) का विरोध सहन
+     करना पड़ेगा? उदाहरण के लिए, धमकियां, उत्पीड़न, या हिंसा?
+
+       • हां संभावना है
+
+       • नहीं, संभावना नहीं है
+
+
+
+
+                                                  16
+

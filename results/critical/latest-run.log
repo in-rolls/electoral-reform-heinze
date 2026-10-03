@@ -1,0 +1,6 @@
+Warning message:
+In ovb_partial_r2_bound.numeric(r2dxj.x = r2dxj.x[i], r2yxj.dx = r2yxj.dx[i],  :
+  Implied bound on r2yz.dx greater than 1, try lower kd and/or ky. Setting r2yz.dx to 1.
+Warning message:
+In ovb_partial_r2_bound.numeric(r2dxj.x = r2dxj.x[i], r2yxj.dx = r2yxj.dx[i],  :
+  Implied bound on r2yz.dx greater than 1, try lower kd and/or ky. Setting r2yz.dx to 1.

@@ -2,13 +2,14 @@ PYTHON ?= python3
 RSCRIPT ?= Rscript
 export R_LIBS_USER = $(CURDIR)/work/authors-library
 
-.PHONY: all verify authors audit inference note test lint format deps
+.PHONY: all verify authors audit inference critical note test lint format deps
 
-all: verify authors audit inference note lint test
+all: verify authors audit inference critical note lint test
 
 verify:
 	$(PYTHON) analysis/preserve.py
 	cd sources/institutions && shasum -a 256 -c SHA256SUMS
+	cd sources/preregistration && shasum -a 256 -c SHA256SUMS
 
 authors: verify
 	$(RSCRIPT) analysis/run_authors.R > results/authors/latest-run.log 2>&1
@@ -18,6 +19,10 @@ audit: verify
 
 inference: verify
 	$(RSCRIPT) analysis/inference.R > results/inference/latest-run.log 2>&1
+
+critical: verify
+	$(RSCRIPT) analysis/critical_diagnostics.R > results/critical/latest-run.log 2>&1
+	$(PYTHON) analysis/write_assessment.py
 
 note:
 	$(PYTHON) analysis/write_note.py

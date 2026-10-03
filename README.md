@@ -3,6 +3,9 @@
 Replication of Alyssa R. Heinze, **“Democratic Deepening or Elite Persistence? How Local Elites Adapt to Electoral Reform in Rural India”**, and an arithmetic-first audit of its headline claims.
 
 - [Four-section audit note](docs/audit-note.md)
+- [Private critical assessment of the paper's argument](docs/private-assessment.md)
+- [Claim ledger, defenses and adjudicated verdicts](docs/claim-ledger.md)
+- [Follow-up sensitivity, SC-quota and experiment diagnostics](docs/critical-diagnostics.md)
 - [Literal variable dictionary](docs/variable-dictionary.md)
 - [All headline means, denominators, uncertainty and cohort means](results/audit/raw-means.csv)
 - [Author-code execution and numerical comparisons](docs/execution.md)
@@ -12,6 +15,12 @@ Replication of Alyssa R. Heinze, **“Democratic Deepening or Elite Persistence?
 - [Audit coverage matrix](docs/check-matrix.md)
 
 The unedited author workflow reproduces all 28 deposited tables (2,925 printed numerical cells) and 161 checked main-figure labels. Main concerns involve planned/shared tenure labeled resignation, cohort differences, concentrated land-measure missingness, dependence, and reused citizen questions. These are distinguished from a small verified balance-table SE error. Several requested checks require data omitted from the public release; they are explicitly marked unavailable.
+
+The deeper assessment finds that officeholder privilege does not establish persistent
+elite capture. It also documents bundled and changing statutory powers, limits of the
+gender-quota sensitivity benchmark, and the gap between vignette expectations and actual
+institutional mediation. Qualitative evidence does document adaptation in selected cases;
+the experiment's sample counts and main preregistered analyses reconcile.
 
 ## Reproduce locally
 
@@ -24,7 +33,7 @@ make deps
 make all
 ```
 
-`make all` verifies the sources, executes the full author pipeline in a disposable copy, runs the independent audit and inference diagnostics, regenerates the note, runs black/isort/flake8/lintr, and runs independent arithmetic tests. Bootstrap inference uses 9,999 draws and seed 20261002. Logs and outputs are under `results/`. Use ordinary `make all`, without `-j`, to preserve audit order.
+`make all` verifies the sources, executes the full author pipeline in a disposable copy, runs the independent audit, inference and critical diagnostics, regenerates both assessments, runs black/isort/flake8/lintr, and runs independent arithmetic tests. Bootstrap inference uses 9,999 draws and seed 20261002. Logs and outputs are under `results/`. Use ordinary `make all`, without `-j`, to preserve audit order. `make critical` reruns the follow-up diagnostics and regenerates the private assessment from existing baseline audit outputs.
 
 The public data are bundled; no data download or API key is needed to rerun. Initial dependency installation needs CRAN/GitHub access and native build tools if binary R packages are unavailable. The bootstrap dependency is installed from its upstream 0.14.3 commit, matching this run. `make test` checks existing results; `make audit` and `make inference` regenerate their respective outputs. Development linting covers the new audit code; preserved author code is not restyled.
 

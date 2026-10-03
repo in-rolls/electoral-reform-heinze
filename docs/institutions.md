@@ -44,3 +44,37 @@ President Q14 simply asks whether the respondent contested unopposed or whether 
 ## Verification and preservation
 
 The sections above were read in the official English Gazette texts and checked against the government bulletin and ordinance index. The three boundary records were independently recovered using Python's CSV reader. Downloaded primary sources in `sources/institutions/` are separate from the original Dataverse archive and its manifest. No treatment variable, author dataset, estimate, or original replication file was changed.
+
+## Follow-up audit: powers and succession
+
+The reform bundled election method with changes in executive powers and removal rules.
+The statutory comparison adds a rival explanation to the proposed composition mechanism;
+it does not estimate the contribution of legal powers to any outcome.
+
+| Historical amendment | Verified provision | Consequence for interpretation |
+|---|---|---|
+| Act LIV of 2018, section 15, English p.6/PDF p.14 | Inserts section 38(2)(i-a) specifically for directly elected presidents: agenda finalization, annual-budget preparation, scheme implementation in consultation with the council, and referral of certain resolutions to the Gram Sabha. | The intervention changes formal tools for exercising authority as well as who elects the president. |
+| Same Act, section 14, English pp.5–6/PDF pp.13–14 | Modifies no-confidence initiation, passage, Gram Sabha ratification and protected periods for the direct regime. | Removal incentives differ institutionally; lower turnover need not uniquely reveal elite adaptation. No-confidence and resignation remain distinct outcomes. |
+| Same Act, sections 19–20, English pp.7–8/PDF pp.15–16 | Creates a direct-president-led budget and supplementary-budget process. | The attractiveness and powers of office may change jointly with candidate selection. |
+| Act II of 2020, section 7, English pp.2–3/PDF pp.7–8; sections 9–10, pp.3–4/PDF pp.8–9 | Adds generally applicable agenda/budget clauses and resolution referral, and a general president-led budget process. | Comparable powers are extended generally during the survey era. Do not assume direct incumbents uniquely retained every additional power at interview. Section 7 does not expressly delete the earlier clause (i-a). |
+| Same Act, section 8, English p.3/PDF p.8; section 12(2), English p.5/PDF p.10 | Replaces village-wide succession to a vacant directly elected presidency with member selection, while grandfathering vacancy procedures already begun. | The paper's categorical Table 1 succession distinction does not describe every period of follow-up. The future-tenure-sharing question makes this change directly relevant. |
+
+Sources: [official 2018 Gazette](https://maharashtra.gov.in/Upload/PDF/13%2008%202018%20Thet%20sarpanch%20adhiniyam.pdf)
+and [official 2020 Gazette](https://maharashtra.gov.in/Upload/PDF/Notification%20for%20Sarpanch.pdf).
+These are readings of dated amendments, not a complete account of later amendments or
+present law. English source pages for the powers and succession provisions were also
+rendered and visually checked.
+
+The paper does not explicitly state that formal powers were identical. Its p.6 political
+quotation mentions centralized powers and footnote 14 acknowledges no-confidence votes
+under both regimes. But its institutional account and Appendix do not separate these
+statutory components, and pp.5–6/Table 1 describe direct-president replacement through
+another village-wide vote without the 2020 qualification.
+
+The strongest defensible criticism is that the observed comparisons do not isolate
+election method or demonstrate a constant succession mechanism throughout the observation
+window. The original mechanism can still describe earlier expectations and behavior.
+The amendments do not show that respondents understood the changes, that rotation resumed,
+that a particular treatment code is wrong, or that the authority effect disappears.
+Resolving those questions requires dated council and incumbent histories, interview dates,
+applicable election orders and records of actual implementation.

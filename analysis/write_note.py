@@ -84,6 +84,10 @@ def main():
     influence = authority["most_influential_gd", "all"]
     note = f"""# Audit of Heinze, *Democratic Deepening or Elite Persistence?*
 
+The [follow-up private assessment](private-assessment.md) examines the broader causal
+argument, statutory changes, sensitivity calibration and preregistration. This note
+retains the original four-section numerical audit and its verification boundaries.
+
 The headline numbers reproduce. Their strongest defensible interpretation is a set of
 differences in presidential voice, characteristics, and reported rotation across election
 regimes. The public deposit cannot establish comparable resignation exposure, separate
