@@ -1,0 +1,31 @@
+\begin{table}
+\centering
+\begin{talltblr}[         %% tabularray outer open
+caption={The impact of direct election on informal elite capture},
+note{}={+ p \num{< 0.1}, * p \num{< 0.05}, ** p \num{< 0.01}, *** p \num{< 0.001}},
+note{ }={Each model is a linear regression of each informal capture outcome on direct election. All regressions use robust standard errors. Outcomes from the citizen survey use cluster robust standard errors at the council level.},
+]                     %% tabularray outer close
+{                     %% tabularray inner open
+colspec={Q[]Q[]Q[]Q[]Q[]Q[]Q[]Q[]},
+hline{2}={3-8}{solid, black, 0.03em},
+hline{2}={2}{solid, black, 0.03em, l=-0.5},
+hline{3}={1-8}{solid, black, 0.05em},
+hline{7}={1-8}{solid, black, 0.05em},
+hline{1}={1-8}{solid, black, 0.08em},
+hline{9}={1-8}{solid, black, 0.08em},
+column{3-8}={}{halign=c},
+cell{1}{1}={}{halign=c},
+cell{1}{2}={c=7}{halign=c},
+cell{2-8}{1}={}{halign=l},
+cell{2-8}{2}={}{halign=c},
+}                     %% tabularray inner close
+& Informal capture measures &  &  &  &  &  &  \\
+& Citizen reports former president/other villager leads village events & Citizen nominated former president/other villager as village representative to bureaucrat & President reports rich landowner influences council & Resignation filed: Administrative data & Citizen reports resignation & President reports resignation & President elected unopposed \\
+(Intercept) & $0.205$*** & $0.168$*** & $0.131$*** & $0.193$*** & $0.210$*** & $0.233$*** & $0.409$*** \\
+& ($0.011$) & ($0.009$) & ($0.018$) & ($0.014$) & ($0.018$) & ($0.022$) & ($0.026$) \\
+Direct election & $-0.057$*** & $-0.052$*** & $-0.083$*** & $-0.138$*** & $-0.180$*** & $-0.207$*** & $-0.281$*** \\
+& ($0.015$) & ($0.014$) & ($0.023$) & ($0.017$) & ($0.020$) & ($0.024$) & ($0.034$) \\
+Num.Obs. & $3536$ & $3603$ & $588$ & $1366$ & $3578$ & $601$ & $603$ \\
+R2 & $0.005$ & $0.005$ & $0.018$ & $0.039$ & $0.064$ & $0.078$ & $0.089$ \\
+\end{talltblr}
+\end{table}

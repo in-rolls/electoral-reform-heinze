@@ -1,0 +1,109 @@
+Behavior
+
+Perception
+
+Citizen reports president |
+leads village events
+
+Citizen nominated
+president as village |
+
+representative to
+
+bureaucrat
+
+Proportion of time
+president spoke in 4
+discussion
+
+President self-perception
+as main decision-maker in +
+monthly meeting
+
+President perceived as
+most influential actor in 3
+discussion
+
+Means, by type of election
+
+ATE estimate (diff. means)
+
+0.617
+i d
+
+0.748
+
+0.583 0.665
+i d
+
+0.259 0.311
+id
+
+0.211
+i d
+
+0.325
+
+0.178
+i d
+
+0.329
+
+0.132 (p < 0.001)
+=-=@—
+0.082 (p < 0.001)
+-—@—
+
+0.052 (p < 0.001)
+oe
+
+0.114 (p < 0.01)
+—S
+
+T
+|
+l
+|
+l
+|
+|
+|
+l
+I
+l
+l
+|
+l
+|
+l
+|
+l
+|
+l
+I
+|
+|
+l
+|
+l
+|
+|
+|
+l
+|
+| 0.151 (p < 0.001)
+| —_o—
+
+|
+
+l
+
+|
+
+|
+
+0.0
+
+05 1.0
+
+0.0 05

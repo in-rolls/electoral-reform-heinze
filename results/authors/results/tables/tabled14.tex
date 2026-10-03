@@ -1,0 +1,96 @@
+\begin{table}
+\centering
+\begin{talltblr}[         %% tabularray outer open
+caption={Benchmarking the impact of direct election on informal capture},
+note{}={+ p \num{< 0.1}, * p \num{< 0.05}, ** p \num{< 0.01}, *** p \num{< 0.001}},
+note{ }={Each model is a linear regression of each informal capture outcome on either direct election, gender quota, or SC quota. All regressions use robust standard errors. Outcomes from the citizen survey use cluster robust standard errors at the council level.},
+]                     %% tabularray outer close
+{                     %% tabularray inner open
+colspec={Q[]Q[]Q[]Q[]},
+hline{2}={1-4}{solid, black, 0.05em},
+hline{1}={1-4}{solid, black, 0.08em},
+hline{79}={1-4}{solid, black, 0.08em},
+column{2-4}={}{halign=c},
+cell{1,3-12,14-23,25-34,36-45,47-56,58-67,69-78}{1}={}{halign=l},
+cell{2,13,24,35,46,57,68}{1}={c=4}{halign=l},
+}                     %% tabularray inner close
+& Impact of direct & Impact of gender quota & Impact of SC quota \\
+Citizen reports former president/other villager leads village events & Citizen reports former president/other villager leads village events & Citizen reports former president/other villager leads village events & Citizen reports former president/other villager leads village events \\
+(Intercept) & 0.205*** & 0.170*** & 0.177*** \\
+& (0.011) & (0.011) & (0.010) \\
+Direct election & -0.057*** &  &  \\
+& (0.015) &  &  \\
+Gender quota &  & 0.027+ &  \\
+&  & (0.016) &  \\
+SC quota &  &  & 0.018 \\
+&  &  & (0.017) \\
+Num.Obs. & 3536 & 3536 & 3536 \\
+R2 & 0.005 & 0.001 & 0.000 \\
+Citizen nominated former president/other villager as village representative to bureaucrat & Citizen nominated former president/other villager as village representative to bureaucrat & Citizen nominated former president/other villager as village representative to bureaucrat & Citizen nominated former president/other villager as village representative to bureaucrat \\
+(Intercept) & 0.168*** & 0.137*** & 0.138*** \\
+& (0.009) & (0.009) & (0.008) \\
+Direct election & -0.052*** &  &  \\
+& (0.014) &  &  \\
+Gender quota &  & 0.022 &  \\
+&  & (0.014) &  \\
+SC quota &  &  & 0.029+ \\
+&  &  & (0.015) \\
+Num.Obs. & 3603 & 3603 & 3603 \\
+R2 & 0.005 & 0.001 & 0.001 \\
+President reports rich landowner influences council & President reports rich landowner influences council & President reports rich landowner influences council & President reports rich landowner influences council \\
+(Intercept) & 0.131*** & 0.081*** & 0.088*** \\
+& (0.018) & (0.016) & (0.014) \\
+Direct election & -0.083*** &  &  \\
+& (0.023) &  &  \\
+Gender quota &  & 0.037 &  \\
+&  & (0.025) &  \\
+SC quota &  &  & 0.034 \\
+&  &  & (0.028) \\
+Num.Obs. & 588 & 588 & 588 \\
+R2 & 0.018 & 0.004 & 0.003 \\
+Resignation filed: Administrative data & Resignation filed: Administrative data & Resignation filed: Administrative data & Resignation filed: Administrative data \\
+(Intercept) & 0.193*** & 0.140*** & 0.151*** \\
+& (0.014) & (0.012) & (0.011) \\
+Direct election & -0.138*** &  &  \\
+& (0.017) &  &  \\
+Gender quota &  & -0.008 &  \\
+&  & (0.019) &  \\
+SC quota &  &  & -0.112*** \\
+&  &  & (0.020) \\
+Num.Obs. & 1366 & 1357 & 1267 \\
+R2 & 0.039 & 0.000 & 0.010 \\
+Citizen reports resignation & Citizen reports resignation & Citizen reports resignation & Citizen reports resignation \\
+(Intercept) & 0.210*** & 0.138*** & 0.171*** \\
+& (0.018) & (0.016) & (0.016) \\
+Direct election & -0.180*** &  &  \\
+& (0.020) &  &  \\
+Gender quota &  & 0.003 &  \\
+&  & (0.024) &  \\
+SC quota &  &  & -0.098*** \\
+&  &  & (0.022) \\
+Num.Obs. & 3578 & 3578 & 3578 \\
+R2 & 0.064 & 0.000 & 0.017 \\
+President reports resignation & President reports resignation & President reports resignation & President reports resignation \\
+(Intercept) & 0.233*** & 0.148*** & 0.192*** \\
+& (0.022) & (0.020) & (0.020) \\
+Direct election & -0.207*** &  &  \\
+& (0.024) &  &  \\
+Gender quota &  & 0.010 &  \\
+&  & (0.029) &  \\
+SC quota &  &  & -0.119*** \\
+&  &  & (0.027) \\
+Num.Obs. & 601 & 601 & 601 \\
+R2 & 0.078 & 0.000 & 0.024 \\
+President elected unopposed & President elected unopposed & President elected unopposed & President elected unopposed \\
+(Intercept) & 0.409*** & 0.260*** & 0.315*** \\
+& (0.026) & (0.025) & (0.023) \\
+Direct election & -0.281*** &  &  \\
+& (0.034) &  &  \\
+Gender quota &  & 0.084* &  \\
+&  & (0.037) &  \\
+SC quota &  &  & -0.047 \\
+&  &  & (0.039) \\
+Num.Obs. & 603 & 603 & 603 \\
+R2 & 0.089 & 0.008 & 0.002 \\
+\end{talltblr}
+\end{table}

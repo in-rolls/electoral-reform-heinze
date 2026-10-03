@@ -1,0 +1,34 @@
+Registered S3 method overwritten by 'clubSandwich':
+  method    from    
+  bread.mlm sandwich
+Warning: Please note that the seeding behavior for random number generation for
+`boottest()` has changed with `fwildclusterboot` version 0.13.
+
+It will no longer be possible to exactly reproduce results produced by versions
+lower than 0.13.
+
+If your prior results were produced under sufficiently many bootstrap
+iterations, none of your conclusions will change. For more details about this
+change, please read the notes in
+[news.md](https://cran.r-project.org/web/packages/fwildclusterboot/news/news.html).
+This warning is displayed once per session.
+Too guarantee reproducibility, don't forget to set a global random seed
+**both** via `set.seed()` and `dqrng::dqset.seed()`.
+This message is displayed once every 8 hours.
+Completed: most_influential_gd
+Completed: prop_speakingtime_sarpanch
+Completed: i_decide_masik_sabha
+Completed: sarpanch_maratha
+Completed: avg_prop_land_held_sarpanch_caste
+Completed: sarpanch_male
+Completed: sarpanch_land_own_name
+Completed: three_four_wheeler
+Completed: pacca_house
+Completed: sarpanch_uncontested
+Completed: resignation
+Completed: rich_landowner_influences_gp
+Completed: sarpanch_nominate_BDO
+Completed: sarpanch_inauguralevents
+Completed: other_nominate_BDO
+Completed: formersarpanch_otherperson_inauguralevents
+Completed: resignation_reported

@@ -1,0 +1,40 @@
+Maratha;
+
+Male -
+
+Demographic dominance increases authority
+
+ATE estimate: 0.139
+Mean Dalit: 0.605
+(p < 0.001)
+
+ATE estimate: 0.049
+Mean female: 0.658
+(p < 0.010)
+
+Intersectional dominance increases authority
+0.8
+
+0.00
+Covariate-adjusted OLS ATE estimate (percentage points)
+
+0.77
+0.74
+0.63
+0.6 0.58
+o
+=
+GS o4
+Cc
+oO
+o
+=
+0.2
+0.0
+xe xe \@ L\@
+& & s&s &
+<S Se ror a
+} S & & e
+0.25 » SF °
+
+Hypothetical president

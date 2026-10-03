@@ -1,0 +1,61 @@
+audit_data.py  original/data/analysis/resignation_admin.csv
+
+========================================================================
+1. SHAPE AND KEYS
+========================================================================
+rows 1,425   columns 6
+no --key given; skipping uniqueness (pass one, it is the cheapest check)
+
+========================================================================
+2. MISSINGNESS (level, and -- what matters -- differential)
+========================================================================
+columns with any missing:
+  reserved_sc                                   10.95%  (156)
+  reserved_open                                 10.95%  (156)
+  reserved_obc                                  10.95%  (156)
+  reserved_women                                 4.63%  (66)
+  resigned                                       4.00%  (57)
+  direct                                         3.93%  (56)
+
+differential missingness by 'direct' (max-min fill rate > 2pp):
+  none
+
+========================================================================
+3. ZEROS VS MISSING
+========================================================================
+column                                           zeros       %   missing       %
+resigned                                         1,181   82.9%        57    4.0%
+reserved_sc                                      1,140   80.0%       156   10.9%
+reserved_obc                                       959   67.3%       156   10.9%
+direct                                             809   56.8%        56    3.9%
+reserved_women                                     778   54.6%        66    4.6%
+reserved_open                                      516   36.2%       156   10.9%
+
+For every column with BOTH: is the zero 'measured, none found' or
+'not measured'? If the data cannot tell them apart, neither can the model.
+
+========================================================================
+4. DTYPE TRAPS
+========================================================================
+none found
+
+========================================================================
+5. VALUES OUTSIDE THEIR LOGICAL RANGE
+========================================================================
+none found
+
+========================================================================
+6. DISTRIBUTIONS, SKEW AND TAILS
+========================================================================
+nothing with enough variation to summarise
+
+========================================================================
+7. RATE COLUMNS AND THEIR RECONSTRUCTED DENOMINATORS
+========================================================================
+no columns whose name suggests a rate; skipping
+
+========================================================================
+SUMMARY
+========================================================================
+no hard failures. The soft findings above still need judgement --
+this script narrows where to look, it does not decide.

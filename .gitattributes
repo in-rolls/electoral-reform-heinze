@@ -1,0 +1,6 @@
+sources/** -text -whitespace
+results/**/*.log -whitespace
+results/**/session-info.txt -whitespace
+results/authors/deposited-figure*.txt -whitespace
+results/authors/results/** -whitespace
+results/inference/vcovCL-official-manual.txt -whitespace

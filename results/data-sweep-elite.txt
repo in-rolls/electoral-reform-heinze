@@ -1,0 +1,148 @@
+audit_data.py  original/data/analysis/elite_survey.csv
+
+========================================================================
+1. SHAPE AND KEYS
+========================================================================
+rows 604   columns 40
+key ['r_villageid']: 604 distinct, 0 duplicate rows
+
+========================================================================
+2. MISSINGNESS (level, and -- what matters -- differential)
+========================================================================
+columns with any missing:
+  avg_prop_land_held_sarpanch_caste             36.75%  (222)
+  establishment_post_1995                        4.64%  (28)
+  establishment_period_between_1                 4.64%  (28)
+  establishment_pre_1958                         4.64%  (28)
+  establishment_year                             4.64%  (28)
+  establishment_date                             4.64%  (28)
+  rich_landowner_influences_gp                   2.65%  (16)
+  i_decide_masik_sabha                           1.49%  (9)
+  sarpanch_land_own_name                         1.32%  (8)
+  overall_percent_SC_gp                          0.83%  (5)
+  all_villages_electricity_grid                  0.50%  (3)
+  resignation                                    0.50%  (3)
+  sarpanch_political_party_worker_before         0.50%  (3)
+  economic_opportunities                         0.17%  (1)
+  party_told_me_to_run                           0.17%  (1)
+  prop_speakingtime_sarpanch                     0.17%  (1)
+  sarpanch_maratha                               0.17%  (1)
+  pilgrimage_sites                               0.17%  (1)
+  total_population_gp                            0.17%  (1)
+  sarpanch_uncontested                           0.17%  (1)
+
+differential missingness by 'direct' (max-min fill rate > 2pp):
+  avg_prop_land_held_sarpanch_caste    spread  13.3pp   0=41.9%  1=28.6%
+  i_decide_masik_sabha                 spread   2.4pp   0=2.4%  1=0.0%
+  ^ differential missingness MANUFACTURES trends and gaps.
+    Constant missingness only attenuates. Check each of these.
+
+differential missingness by 'sarpanch_election_year' (max-min fill rate > 2pp):
+  avg_prop_land_held_sarpanch_caste    spread 100.0pp   2015=100.0%  2016=75.0%  2017=26.8%  2018=32.2%  2019=34.6%  2020=0.0%  2021=1.0%
+  establishment_post_1995              spread   8.5pp   2015=8.5%  2016=0.0%  2017=4.6%  2018=8.5%  2019=3.8%  2020=0.0%  2021=1.5%
+  establishment_period_between_1       spread   8.5pp   2015=8.5%  2016=0.0%  2017=4.6%  2018=8.5%  2019=3.8%  2020=0.0%  2021=1.5%
+  establishment_pre_1958               spread   8.5pp   2015=8.5%  2016=0.0%  2017=4.6%  2018=8.5%  2019=3.8%  2020=0.0%  2021=1.5%
+  establishment_year                   spread   8.5pp   2015=8.5%  2016=0.0%  2017=4.6%  2018=8.5%  2019=3.8%  2020=0.0%  2021=1.5%
+  establishment_date                   spread   8.5pp   2015=8.5%  2016=0.0%  2017=4.6%  2018=8.5%  2019=3.8%  2020=0.0%  2021=1.5%
+  all_villages_electricity_grid        spread   8.3pp   2015=0.0%  2016=8.3%  2017=0.7%  2018=0.0%  2019=0.0%  2020=0.0%  2021=0.5%
+  resignation                          spread   8.3pp   2015=0.0%  2016=8.3%  2017=0.7%  2018=1.7%  2019=0.0%  2020=0.0%  2021=0.0%
+  rich_landowner_influences_gp         spread   7.0pp   2015=7.0%  2016=0.0%  2017=1.3%  2018=5.1%  2019=0.0%  2020=0.0%  2021=0.5%
+  i_decide_masik_sabha                 spread   5.6pp   2015=5.6%  2016=0.0%  2017=0.0%  2018=0.0%  2019=0.0%  2020=0.0%  2021=0.5%
+  sarpanch_land_own_name               spread   3.4pp   2015=2.1%  2016=0.0%  2017=1.3%  2018=3.4%  2019=0.0%  2020=0.0%  2021=0.5%
+  overall_percent_SC_gp                spread   2.1pp   2015=2.1%  2016=0.0%  2017=0.7%  2018=0.0%  2019=0.0%  2020=0.0%  2021=0.5%
+  ^ differential missingness MANUFACTURES trends and gaps.
+    Constant missingness only attenuates. Check each of these.
+
+========================================================================
+3. ZEROS VS MISSING
+========================================================================
+column                                           zeros       %   missing       %
+party_told_me_to_run                               595   98.5%         1    0.2%
+member_political_party                             571   94.5%         0    0.0%
+party_support_contesting_elections                 553   91.6%         0    0.0%
+establishment_post_1995                            535   88.6%        28    4.6%
+historic_sites                                     532   88.1%         0    0.0%
+rich_landowner_influences_gp                       530   87.7%        16    2.6%
+sarpanch_political_party_worker_before             511   84.6%         3    0.5%
+resignation                                        509   84.3%         3    0.5%
+party_mobilized_voters                             507   83.9%         0    0.0%
+three_four_wheeler                                 475   78.6%         0    0.0%
+most_influential_gd                                461   76.3%         0    0.0%
+establishment_pre_1958                             457   75.7%        28    4.6%
+economic_opportunities                             448   74.2%         1    0.2%
+i_decide_masik_sabha                               443   73.3%         9    1.5%
+sarpanch_maratha                                   440   72.8%         1    0.2%
+sarpanch_uncontested                               422   69.9%         1    0.2%
+pilgrimage_sites                                   417   69.0%         1    0.2%
+reserved_obc                                       417   69.0%         0    0.0%
+reserved_sc                                        410   67.9%         0    0.0%
+reserved_open                                      381   63.1%         0    0.0%
+direct                                             370   61.3%         0    0.0%
+sarpanch_land_own_name                             361   59.8%         8    1.3%
+sarpanch_male                                      351   58.1%         0    0.0%
+reserved_women                                     312   51.7%         0    0.0%
+pacca_house                                        271   44.9%         0    0.0%
+establishment_period_between_1                     160   26.5%        28    4.6%
+all_villages_electricity_grid                       20    3.3%         3    0.5%
+overall_percent_SC_gp                               16    2.6%         5    0.8%
+prop_speakingtime_sarpanch                           9    1.5%         1    0.2%
+total_population_gp                                  0    0.0%         1    0.2%
+avg_prop_land_held_sarpanch_caste                    0    0.0%       222   36.8%
+establishment_year                                   0    0.0%        28    4.6%
+
+For every column with BOTH: is the zero 'measured, none found' or
+'not measured'? If the data cannot tell them apart, neither can the model.
+
+========================================================================
+4. DTYPE TRAPS
+========================================================================
+none found
+
+========================================================================
+5. VALUES OUTSIDE THEIR LOGICAL RANGE
+========================================================================
+none found
+
+========================================================================
+6. DISTRIBUTIONS, SKEW AND TAILS
+========================================================================
+                           column    median         max  max/med   skew  n_top  top_n_mass
+            speed_to_block_office    30.000   2,100.000   70.000 17.056      6       0.188
+              total_population_gp 1,887.000 166,001.000   87.971 16.658      6       0.178
+     total_time_from_block_office     0.500      30.000   60.000 14.632      6       0.175
+               number_villages_GP     1.000       6.000    6.000  3.175      6       0.038
+            overall_percent_SC_gp     0.140       0.990    7.071  1.795      5       0.038
+             km_from_block_office    18.000      70.000    3.889  1.020      6       0.031
+               establishment_year 1,964.000   2,021.000    1.029  0.971      5       0.009
+       prop_speakingtime_sarpanch     0.300       0.850    2.833  0.558      6       0.029
+avg_prop_land_held_sarpanch_caste     0.300       1.000    3.333  0.490      3       0.022
+                      r_villageid 3,603.000   5,524.000    1.533 -0.123      6       0.016
+           sarpanch_election_year 2,017.000   2,021.000    1.002  0.083      6       0.010
+          sarpanch_election_month     7.000      12.000    1.714 -0.072      6       0.019
+
+'top_n_mass' is the share of the total held by the n_top largest values
+(n_top = max(1, n/100), so it is a single value below n = 200). Both it
+and max/med are blank for columns with negative values, where neither is
+interpretable.
+
+4 column(s) are heavily skewed. Before choosing a method,
+decide whether the MEAN or the MEDIAN is the estimand -- see
+checks/tier2-statistical.md section F. Asymptotic SEs are optimistic here.
+
+========================================================================
+7. RATE COLUMNS AND THEIR RECONSTRUCTED DENOMINATORS
+========================================================================
+2 rate-like column(s); testing each against 9 candidate denominator(s).
+A rate whose numerator is present should reconstruct EXACTLY.
+
+  overall_percent_SC_gp                        no numerator column 'overallcent_SC_gp'; cannot reconstruct
+  establishment_period_between_1               no numerator column 'establishmentiod_between_1'; cannot reconstruct
+
+Every rate compared against another must share a denominator.
+Where two differ, that is Tier 1 check 1 and it is worth a hard look.
+
+========================================================================
+SUMMARY
+========================================================================
+no hard failures. The soft findings above still need judgement --
+this script narrows where to look, it does not decide.

@@ -1,0 +1,258 @@
+_C_l_u_s_t_e_r_e_d _C_o_v_a_r_i_a_n_c_e _M_a_t_r_i_x _E_s_t_i_m_a_t_i_o_n
+
+_D_e_s_c_r_i_p_t_i_o_n:
+
+     Estimation of one-way and multi-way clustered covariance matrices
+     using an object-oriented approach.
+
+_U_s_a_g_e:
+
+     vcovCL(x, cluster = NULL, type = NULL, sandwich = TRUE, fix = FALSE, ...)
+     meatCL(x, cluster = NULL, type = NULL, cadjust = TRUE, multi0 = FALSE, ...)
+     
+_A_r_g_u_m_e_n_t_s:
+
+       x: a fitted model object.
+
+ cluster: a variable indicating the clustering of observations, a
+          ‘list’ (or ‘data.frame’) thereof, or a formula specifying
+          which variables from the fitted model should be used (see
+          examples).  By default (‘cluster = NULL’), either ‘attr(x,
+          "cluster")’ is used (if any) or otherwise every observation
+          is assumed to be its own cluster.
+
+    type: a character string specifying the estimation type (HC0-HC3).
+          The default is to use ‘"HC1"’ for ‘lm’ objects and ‘"HC0"’
+          otherwise.
+
+sandwich: logical. Should the sandwich estimator be computed?  If set
+          to ‘FALSE’ only the meat matrix is returned.
+
+     fix: logical. Should the covariance matrix be fixed to be positive
+          semi-definite in case it is not?
+
+ cadjust: logical. Should a cluster adjustment be applied?
+
+  multi0: logical. Should the HC0 estimate be used for the final
+          adjustment in multi-way clustered covariances?
+
+     ...: arguments passed to ‘meatCL’.
+
+_D_e_t_a_i_l_s:
+
+     Clustered sandwich estimators are used to adjust inference when
+     errors are correlated within (but not between) clusters. ‘vcovCL’
+     allows for clustering in arbitrary many cluster dimensions (e.g.,
+     firm, time, industry), given all dimensions have enough clusters
+     (for more details, see Cameron et al. 2011).  If each observation
+     is its own cluster, the clustered sandwich collapses to the basic
+     sandwich covariance.
+
+     The function ‘meatCL’ is the work horse for estimating the meat of
+     clustered sandwich estimators. ‘vcovCL’ is a wrapper calling
+     ‘sandwich’ and ‘bread’ (Zeileis 2006).  ‘vcovCL’ is applicable
+     beyond ‘lm’ or ‘glm’ class objects.
+
+     ‘bread’ and ‘meat’ matrices are multiplied to construct clustered
+     sandwich estimators.  The meat of a clustered sandwich estimator
+     is the cross product of the clusterwise summed estimating
+     functions. Instead of summing over all individuals, first sum over
+     cluster.
+
+     A two-way clustered sandwich estimator M (e.g., for cluster
+     dimensions "firm" and "industry" or "id" and "time") is a linear
+     combination of one-way clustered sandwich estimators for both
+     dimensions (M_{id}, M_{time}) minus the clustered sandwich
+     estimator, with clusters formed out of the intersection of both
+     dimensions (M_{id \cap time}):
+
+                  M = M_{id} + M_{time} - M_{id \cap time}              
+     
+     .  Additionally, each of the three terms can be weighted by the
+     corresponding cluster bias adjustment factor (see below and
+     Equation 20 in Zeileis et al. 2020).  Instead of subtracting M_{id
+     \cap time} as the last subtracted matrix, Ma (2014) suggests to
+     subtract the basic HC0 covariance matrix when only a single
+     observation is in each intersection of id and time.  Set ‘multi0 =
+     TRUE’ to subtract the basic HC0 covariance matrix as the last
+     subtracted matrix in multi-way clustering. For details, see also
+     Petersen (2009) and Thompson (2011).
+
+     With the ‘type’ argument, HC0 to HC3 types of bias adjustment can
+     be employed, following the terminology used by MacKinnon and White
+     (1985) for heteroscedasticity corrections. HC0 applies no small
+     sample bias adjustment.  HC1 applies a degrees of freedom-based
+     correction, (n-1)/(n-k) where n is the number of observations and
+     k is the number of explanatory or predictor variables in the
+     model.  HC1 is the most commonly used approach for linear models,
+     and HC0 otherwise. Hence these are the defaults in ‘vcovCL’.
+     However, HC0 and HC1 are less effective than HC2 and HC3 when the
+     number of clusters is relatively small (Cameron et al. 2008).  HC2
+     and HC3 types of bias adjustment are geared towards the linear
+     model, but they are also applicable for GLMs (see Bell and
+     McCaffrey 2002, and Kauermann and Carroll 2001, for details).  A
+     precondition for HC2 and HC3 types of bias adjustment is the
+     availability of a hat matrix (or a weighted version therof for
+     GLMs) and hence these two types are currently only implemented for
+     ‘lm’ and ‘glm’ objects.
+
+     An alternative to the clustered HC3 estimator is the clustered
+     jackknife estimator which is available in ‘vcovBS’ with ‘type =
+     "jackknife"’. In linear models the HC3 and the jackknife estimator
+     coincide (MacKinnon et al. 2022) with the latter still being
+     computationally feasible if the number of observations per cluster
+     is large. In nonlinear models (including non-Gaussian GLMs) the
+     jackknife and the HC3 estimator do not coincide but the jackknife
+     might still be a useful alternative when the HC3 cannot be
+     computed.
+
+     The ‘cadjust’ argument allows to switch the cluster bias
+     adjustment factor G/(G-1) on and off (where G is the number of
+     clusters in a cluster dimension g) See Cameron et al. (2008) and
+     Cameron et al. (2011) for more details about small-sample
+     modifications.
+
+     The ‘cluster’ specification can be made in a number of ways: The
+     ‘cluster’ can be a single variable or a ‘list’/‘data.frame’ of
+     multiple clustering variables. If ‘expand.model.frame’ works for
+     the model object ‘x’, the ‘cluster’ can also be a ‘formula’.  By
+     default (‘cluster = NULL’), ‘attr(x, "cluster")’ is checked and
+     used if available. If not, every observation is assumed to be its
+     own cluster.  If the number of observations in the model ‘x’ is
+     smaller than in the original ‘data’ due to ‘NA’ processing, then
+     the same ‘NA’ processing can be applied to ‘cluster’ if necessary
+     (and ‘x$na.action’ being available).
+
+     Cameron et al. (2011) observe that sometimes the covariance matrix
+     is not positive-semidefinite and recommend to employ the
+     eigendecomposition of the estimated covariance matrix, setting any
+     negative eigenvalue(s) to zero. This fix is applied, if necessary,
+     when ‘fix = TRUE’ is specified.
+
+_V_a_l_u_e:
+
+     A matrix containing the covariance matrix estimate.
+
+_R_e_f_e_r_e_n_c_e_s:
+
+     Bell RM, McCaffrey DF (2002).  “Bias Reduction in Standard Errors
+     for Linear Regression with Multi-Stage Samples”, _Survey
+     Methodology_, *28*(2), 169-181.
+
+     Cameron AC, Gelbach JB, Miller DL (2008).  “Bootstrap-Based
+     Improvements for Inference with Clustered Errors”, _The Review of
+     Economics and Statistics_, *90*(3), 414-427.  doi:10.3386/t0344
+     <https://doi.org/10.3386/t0344>
+
+     Cameron AC, Gelbach JB, Miller DL (2011).  “Robust Inference with
+     Multiway Clustering”, _Journal of Business & Ecomomic Statistics_,
+     *29*(2), 238-249.  doi:10.1198/jbes.2010.07136
+     <https://doi.org/10.1198/jbes.2010.07136>
+
+     Kauermann G, Carroll RJ (2001).  “A Note on the Efficiency of
+     Sandwich Covariance Matrix Estimation”, _Journal of the American
+     Statistical Association_, *96*(456), 1387-1396.
+     doi:10.1198/016214501753382309
+     <https://doi.org/10.1198/016214501753382309>
+
+     Ma MS (2014).  “Are We Really Doing What We Think We Are Doing? A
+     Note on Finite-Sample Estimates of Two-Way Cluster-Robust Standard
+     Errors”, _Mimeo, Availlable at SSRN._ doi:10.2139/ssrn.2420421
+     <https://doi.org/10.2139/ssrn.2420421>
+
+     MacKinnon JG, Nielsen MØ, Webb MD (2022).  “Cluster-Robust
+     Inference: A Guide to Empirical Practice”, _Journal of
+     Econometrics_, Forthcoming.  doi:10.1016/j.jeconom.2022.04.001
+     <https://doi.org/10.1016/j.jeconom.2022.04.001>
+
+     MacKinnon JG, White H (1985).  “Some Heteroskedasticity-Consistent
+     Covariance Matrix Estimators with Improved Finite Sample
+     Properties” _Journal of Econometrics_, *29*(3), 305-325.
+     doi:10.1016/0304-4076(85)90158-7
+     <https://doi.org/10.1016/0304-4076%2885%2990158-7>
+
+     Petersen MA (2009).  “Estimating Standard Errors in Finance Panel
+     Data Sets: Comparing Approaches”, _The Review of Financial
+     Studies_, *22*(1), 435-480.  doi:10.1093/rfs/hhn053
+     <https://doi.org/10.1093/rfs/hhn053>
+
+     Thompson SB (2011).  “Simple Formulas for Standard Errors That
+     Cluster by Both Firm and Time”, _Journal of Financial Economics_,
+     *99*(1), 1-10.  doi:10.1016/j.jfineco.2010.08.016
+     <https://doi.org/10.1016/j.jfineco.2010.08.016>
+
+     Zeileis A (2004).  “Econometric Computing with HC and HAC
+     Covariance Matrix Estimator”, _Journal of Statistical Software_,
+     *11*(10), 1-17.  doi:10.18637/jss.v011.i10
+     <https://doi.org/10.18637/jss.v011.i10>
+
+     Zeileis A (2006).  “Object-Oriented Computation of Sandwich
+     Estimators”, _Journal of Statistical Software_, *16*(9), 1-16.
+     doi:10.18637/jss.v016.i09 <https://doi.org/10.18637/jss.v016.i09>
+
+     Zeileis A, Köll S, Graham N (2020).  “Various Versatile Variances:
+     An Object-Oriented Implementation of Clustered Covariances in R.”
+     _Journal of Statistical Software_, *95*(1), 1-36.
+     doi:10.18637/jss.v095.i01 <https://doi.org/10.18637/jss.v095.i01>
+
+_S_e_e _A_l_s_o:
+
+     ‘vcovHC’, ‘vcovBS’
+
+_E_x_a_m_p_l_e_s:
+
+     ## Petersen's data
+     data("PetersenCL", package = "sandwich")
+     m <- lm(y ~ x, data = PetersenCL)
+     
+     ## clustered covariances
+     ## one-way
+     vcovCL(m, cluster = ~ firm)
+     vcovCL(m, cluster = PetersenCL$firm) ## same
+     ## one-way with HC2
+     vcovCL(m, cluster = ~ firm, type = "HC2")
+     ## two-way
+     vcovCL(m, cluster = ~ firm + year)
+     vcovCL(m, cluster = PetersenCL[, c("firm", "year")]) ## same
+     
+     ## comparison with cross-section sandwiches
+     ## HC0
+     all.equal(sandwich(m), vcovCL(m, type = "HC0", cadjust = FALSE))
+     ## HC2
+     all.equal(vcovHC(m, type = "HC2"), vcovCL(m, type = "HC2"))
+     ## HC3
+     all.equal(vcovHC(m, type = "HC3"), vcovCL(m, type = "HC3"))
+     
+     ## Innovation data
+     data("InstInnovation", package = "sandwich")
+     
+     ## replication of one-way clustered standard errors for model 3, Table I
+     ## and model 1, Table II in Berger et al. (2017), see ?InstInnovation
+     
+     ## count regression formula
+     f1 <- cites ~ institutions + log(capital/employment) + log(sales) + industry + year
+     
+     ## model 3, Table I: Poisson model
+     ## one-way clustered standard errors
+     tab_I_3_pois <- glm(f1, data = InstInnovation, family = poisson)
+     vcov_pois <- vcovCL(tab_I_3_pois, InstInnovation$company)
+     sqrt(diag(vcov_pois))[2:4]
+     
+     ## coefficient tables
+     if(require("lmtest")) {
+     coeftest(tab_I_3_pois, vcov = vcov_pois)[2:4, ]
+     }
+     
+     ## Not run:
+     
+     ## model 1, Table II: negative binomial hurdle model
+     ## (requires "pscl" or alternatively "countreg" from R-Forge)
+     library("pscl")
+     library("lmtest")
+     tab_II_3_hurdle <- hurdle(f1, data = InstInnovation, dist = "negbin")
+     #  dist = "negbin", zero.dist = "negbin", separate = FALSE)
+     vcov_hurdle <- vcovCL(tab_II_3_hurdle, InstInnovation$company)
+     sqrt(diag(vcov_hurdle))[c(2:4, 149:151)]
+     coeftest(tab_II_3_hurdle, vcov = vcov_hurdle)[c(2:4, 149:151), ]
+     ## End(Not run)
+     

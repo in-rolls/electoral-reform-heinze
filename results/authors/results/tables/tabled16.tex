@@ -1,0 +1,57 @@
+\begin{table}
+\centering
+\begin{talltblr}[         %% tabularray outer open
+caption={The impact of direct election on informal elite capture, with controls},
+note{}={+ p \num{< 0.1}, * p \num{< 0.05}, ** p \num{< 0.01}, *** p \num{< 0.001}},
+note{ }={Each model is a linear regression of each informal capture outcome on direct election and controls from Figure 3 in the main paper. All regressions use robust standard errors. Outcomes from the citizen survey use cluster robust standard errors at the council level.},
+]                     %% tabularray outer close
+{                     %% tabularray inner open
+colspec={Q[]Q[]Q[]Q[]Q[]Q[]Q[]},
+hline{2}={3-7}{solid, black, 0.03em},
+hline{2}={2}{solid, black, 0.03em, l=-0.5},
+hline{3}={1-7}{solid, black, 0.05em},
+hline{33}={1-7}{solid, black, 0.05em},
+hline{1}={1-7}{solid, black, 0.08em},
+hline{35}={1-7}{solid, black, 0.08em},
+column{3-7}={}{halign=c},
+cell{1}{1}={}{halign=c},
+cell{1}{2}={c=6}{halign=c},
+cell{2-34}{1}={}{halign=l},
+cell{2-34}{2}={}{halign=c},
+}                     %% tabularray inner close
+& Informal capture measures &  &  &  &  &  \\
+& Citizen reports former president/other villager leads village events & Citizen nominated former president/other villager as village representative to bureaucrat & President reports rich landowner influences council & Citizen reports resignation & President reports resignation & President elected unopposed \\
+(Intercept) & $0.191$*** & $0.143$** & $0.012$ & $0.252$*** & $0.223$** & $0.658$*** \\
+& ($0.034$) & ($0.043$) & ($0.060$) & ($0.062$) & ($0.078$) & ($0.112$) \\
+Direct election & $-0.061$*** & $-0.051$*** & $-0.081$*** & $-0.174$*** & $-0.201$*** & $-0.270$*** \\
+& ($0.015$) & ($0.014$) & ($0.023$) & ($0.020$) & ($0.025$) & ($0.035$) \\
+No. villages & $0.019$ & $0.018$+ & $-0.010$ & $-0.014$ & $-0.005$ & $-0.046$* \\
+& ($0.012$) & ($0.010$) & ($0.017$) & ($0.012$) & ($0.017$) & ($0.021$) \\
+Population & $0.000$ & $0.000$ & $0.000$ & $0.000$ & $0.000$ & $-0.000$ \\
+& ($0.000$) & ($0.000$) & ($0.000$) & ($0.000$) & ($0.000$) & ($0.000$) \\
+Percent SC pop. & $-0.179$** & $-0.007$ & $0.225$+ & $-0.022$ & $-0.146$ & $-0.122$ \\
+& ($0.062$) & ($0.054$) & ($0.119$) & ($0.106$) & ($0.108$) & ($0.158$) \\
+Distance to block (km) & $-0.000$ & $-0.001$ & $-0.000$ & $-0.002$+ & $-0.001$ & $0.002$ \\
+& ($0.001$) & ($0.001$) & ($0.001$) & ($0.001$) & ($0.001$) & ($0.002$) \\
+Time to block (hr) & $0.005$ & $-0.003$ & $-0.003$ & $0.004$ & $-0.001$ & $-0.009$ \\
+& ($0.013$) & ($0.002$) & ($0.004$) & ($0.007$) & ($0.003$) & ($0.009$) \\
+Speed to block (km/hr) & $0.000$ & $-0.000$ & $-0.000$ & $0.000$ & $0.000$ & $0.000$ \\
+& ($0.000$) & ($0.000$) & ($0.000$) & ($0.000$) & ($0.000$) & ($0.000$) \\
+Pilgrimage sites & $-0.011$ & $-0.006$ & $0.018$ & $0.057$* & $0.072$* & $-0.016$ \\
+& ($0.018$) & ($0.016$) & ($0.030$) & ($0.025$) & ($0.032$) & ($0.040$) \\
+Historic sites & $0.046$+ & $0.015$ & $0.022$ & $0.029$ & $-0.005$ & $0.035$ \\
+& ($0.025$) & ($0.026$) & ($0.045$) & ($0.040$) & ($0.048$) & ($0.061$) \\
+Economic opportunities & $0.001$ & $-0.010$ & $0.028$ & $0.058$* & $0.109$** & $0.037$ \\
+& ($0.018$) & ($0.017$) & ($0.031$) & ($0.029$) & ($0.036$) & ($0.042$) \\
+Electricity grid & $-0.010$ & $-0.008$ & $0.043$ & $0.037$ & $0.063$ & $-0.235$* \\
+& ($0.027$) & ($0.038$) & ($0.050$) & ($0.052$) & ($0.075$) & ($0.101$) \\
+Gender quota & $0.026$+ & $0.022$ & $0.028$ & $-0.003$ & $0.003$ & $0.079$* \\
+& ($0.016$) & ($0.014$) & ($0.025$) & ($0.022$) & ($0.028$) & ($0.036$) \\
+OBC caste quota & $0.021$ & $0.007$ & $0.041$ & $-0.103$*** & $-0.064$+ & $-0.036$ \\
+& ($0.020$) & ($0.017$) & ($0.030$) & ($0.029$) & ($0.036$) & ($0.044$) \\
+SC caste quota & $0.020$ & $0.031$+ & $0.051$+ & $-0.147$*** & $-0.155$*** & $-0.061$ \\
+& ($0.018$) & ($0.018$) & ($0.030$) & ($0.027$) & ($0.034$) & ($0.044$) \\
+Num.Obs. & $3481$ & $3544$ & $579$ & $3523$ & $591$ & $593$ \\
+R2 & $0.014$ & $0.011$ & $0.041$ & $0.126$ & $0.150$ & $0.123$ \\
+\end{talltblr}
+\end{table}

@@ -1,0 +1,129 @@
+audit_data.py  original/data/analysis/citizen_survey.csv
+
+========================================================================
+1. SHAPE AND KEYS
+========================================================================
+rows 3,658   columns 42
+no --key given; skipping uniqueness (pass one, it is the cheapest check)
+
+========================================================================
+2. MISSINGNESS (level, and -- what matters -- differential)
+========================================================================
+columns with any missing:
+  congress_preferred                             6.83%  (250)
+  bjp_preferred                                  6.83%  (250)
+  citizen_monthly_wage                           6.48%  (237)
+  sarpanch_inauguralevents                       3.34%  (122)
+  formersarpanch_otherperson_inauguralevents     3.34%  (122)
+  resignation_reported                           2.19%  (80)
+  sarpanch_nominate_BDO                          1.50%  (55)
+  other_nominate_BDO                             1.50%  (55)
+  citizen_outside_time                           1.23%  (45)
+  citizen_education                              0.90%  (33)
+  citizen_prior_experience_politics              0.33%  (12)
+  citizen_SC                                     0.25%  (9)
+  citizen_OBC                                    0.25%  (9)
+  citizen_GEN                                    0.25%  (9)
+  citizen_ST                                     0.25%  (9)
+  citizen_time_to_GP                             0.25%  (9)
+  voted_last_gp_election                         0.22%  (8)
+  citizen_hh_vehicle                             0.14%  (5)
+  citizen_smartphone                             0.11%  (4)
+  citizen_hindu                                  0.03%  (1)
+  citizen_muslim                                 0.03%  (1)
+
+differential missingness by 'direct' (max-min fill rate > 2pp):
+  citizen_monthly_wage                 spread   3.1pp   0=7.7%  1=4.6%
+  congress_preferred                   spread   2.7pp   0=7.9%  1=5.2%
+  bjp_preferred                        spread   2.7pp   0=7.9%  1=5.2%
+  ^ differential missingness MANUFACTURES trends and gaps.
+    Constant missingness only attenuates. Check each of these.
+
+========================================================================
+3. ZEROS VS MISSING
+========================================================================
+column                                           zeros       %   missing       %
+citizen_talathi                                  3,644   99.6%         0    0.0%
+citizen_doctor_etc                               3,599   98.4%         0    0.0%
+citizen_kotwal                                   3,585   98.0%         0    0.0%
+citizen_previous_upa_sarpanch                    3,532   96.6%         0    0.0%
+citizen_ST                                       3,517   96.1%         9    0.2%
+citizen_pdsshopkeeper                            3,509   95.9%         0    0.0%
+citizen_muslim                                   3,506   95.8%         1    0.0%
+citizen_phc_worker                               3,503   95.8%         0    0.0%
+citizen_previous_sarpanch                        3,453   94.4%         0    0.0%
+citizen_arogyasevika                             3,414   93.3%         0    0.0%
+citizen_shg_leader                               3,401   93.0%         0    0.0%
+citizen_informal_leader                          3,388   92.6%         0    0.0%
+citizen_govt_employee                            3,387   92.6%         0    0.0%
+citizen_shg_president                            3,373   92.2%         0    0.0%
+citizen_schoolteacher                            3,366   92.0%         0    0.0%
+citizen_party_worker                             3,322   90.8%         0    0.0%
+citizen_previous_gp_member                       3,265   89.3%         0    0.0%
+citizen_anganwadiworker                          3,129   85.5%         0    0.0%
+resignation_reported                             3,079   84.2%        80    2.2%
+other_nominate_BDO                               3,072   84.0%        55    1.5%
+citizen_SC                                       2,930   80.1%         9    0.2%
+formersarpanch_otherperson_inauguralevents       2,890   79.0%       122    3.3%
+bjp_preferred                                    2,785   76.1%       250    6.8%
+congress_preferred                               2,412   65.9%       250    6.8%
+citizen_OBC                                      2,262   61.8%         9    0.2%
+direct                                           2,243   61.3%         0    0.0%
+citizen_GEN                                      2,238   61.2%         9    0.2%
+citizen_female                                   1,829   50.0%         0    0.0%
+citizen_prior_experience_politics                1,558   42.6%        12    0.3%
+sarpanch_nominate_BDO                            1,389   38.0%        55    1.5%
+sarpanch_inauguralevents                         1,176   32.1%       122    3.3%
+citizen_smartphone                               1,049   28.7%         4    0.1%
+citizen_hh_vehicle                                 806   22.0%         5    0.1%
+citizen_hindu                                      434   11.9%         1    0.0%
+voted_last_gp_election                             353    9.7%         8    0.2%
+citizen_live_in_village                            284    7.8%         0    0.0%
+citizen_monthly_wage                               101    2.8%       237    6.5%
+citizen_outside_time                                85    2.3%        45    1.2%
+citizen_education                                   71    1.9%        33    0.9%
+citizen_time_to_GP                                   3    0.1%         9    0.2%
+
+For every column with BOTH: is the zero 'measured, none found' or
+'not measured'? If the data cannot tell them apart, neither can the model.
+
+========================================================================
+4. DTYPE TRAPS
+========================================================================
+none found
+
+========================================================================
+5. VALUES OUTSIDE THEIR LOGICAL RANGE
+========================================================================
+none found
+
+========================================================================
+6. DISTRIBUTIONS, SKEW AND TAILS
+========================================================================
+              column    median         max  max/med   skew  n_top  top_n_mass
+citizen_monthly_wage 7,500.000 820,000.000  109.333 14.274     34       0.122
+  citizen_time_to_GP     0.083       3.000   36.000  5.482     36       0.085
+   citizen_education    12.000      14.000    1.167 -1.462     36       0.013
+         citizen_age    41.000      97.000    2.366  0.534     36       0.018
+citizen_outside_time     6.000      24.000    4.000  0.299     36       0.026
+         r_villageid 3,532.000   5,524.000    1.564 -0.108     36       0.016
+
+'top_n_mass' is the share of the total held by the n_top largest values
+(n_top = max(1, n/100), so it is a single value below n = 200). Both it
+and max/med are blank for columns with negative values, where neither is
+interpretable.
+
+2 column(s) are heavily skewed. Before choosing a method,
+decide whether the MEAN or the MEDIAN is the estimand -- see
+checks/tier2-statistical.md section F. Asymptotic SEs are optimistic here.
+
+========================================================================
+7. RATE COLUMNS AND THEIR RECONSTRUCTED DENOMINATORS
+========================================================================
+no columns whose name suggests a rate; skipping
+
+========================================================================
+SUMMARY
+========================================================================
+no hard failures. The soft findings above still need judgement --
+this script narrows where to look, it does not decide.

@@ -1,0 +1,76 @@
+Loading required package: usethis
+
+Attaching package: ‘dplyr’
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+
+Attaching package: ‘gridExtra’
+
+The following object is masked from ‘package:dplyr’:
+
+    combine
+
+
+Attaching package: ‘lubridate’
+
+The following objects are masked from ‘package:base’:
+
+    date, intersect, setdiff, union
+
+See details in:
+Carlos Cinelli and Chad Hazlett (2020). Making Sense of Sensitivity: Extending Omitted Variable Bias. Journal of the Royal Statistical Society, Series B (Statistical Methodology).
+
+Skipping 5 packages not available: tidyselect, tidyr, magrittr, dplyr, rdrobust
+── R CMD build ─────────────────────────────────────────────────────────────────
+* checking for file ‘/private/var/folders/ks/1g8bn5m566n_w4l5hwwjv4180000gn/T/RtmpBsxGvD/file295514434407/pwtest-package/DESCRIPTION’ ... OK
+* preparing ‘pwtest’:
+* checking DESCRIPTION meta-information ... OK
+* checking for LF line-endings in source and make files and shell scripts
+* checking for empty or unneeded directories
+* building ‘pwtest_0.0.0.9000.tar.gz’
+
+Installing package into ‘/Users/soodoku/Documents/GitHub/in-rolls/heinze-electoral-reform/work/authors-library’
+(as ‘lib’ is unspecified)
+* installing *source* package ‘pwtest’ ...
+** this is package ‘pwtest’ version ‘0.0.0.9000’
+** using staged installation
+** R
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (pwtest)
+Warning messages:
+1: package ‘gridExtra’ was built under R version 4.6.1 
+2: `install_local()` was deprecated in devtools 2.5.0.
+ℹ Please use pak::pak("local::path") instead. 
+Skipping install of 'pwtest' from a local remote, the SHA1 (0.0.0.90) has not changed since last install.
+  Use `force = TRUE` to force installation
+Skipping install of 'pwtest' from a local remote, the SHA1 (0.0.0.90) has not changed since last install.
+  Use `force = TRUE` to force installation
+Scale for y is already present.
+Adding another scale for y, which will replace the existing scale.
+Scale for y is already present.
+Adding another scale for y, which will replace the existing scale.
+Scale for y is already present.
+Adding another scale for y, which will replace the existing scale.
+Scale for y is already present.
+Adding another scale for y, which will replace the existing scale.
+Warning messages:
+1: The `size` argument of `element_rect()` is deprecated as of ggplot2 3.4.0.
+ℹ Please use the `linewidth` argument instead. 
+2: No shared levels found between `names(values)` of the manual scale and the
+data's fill values. 
+Skipping install of 'pwtest' from a local remote, the SHA1 (0.0.0.90) has not changed since last install.
+  Use `force = TRUE` to force installation
+There were 50 or more warnings (use warnings() to see the first 50)

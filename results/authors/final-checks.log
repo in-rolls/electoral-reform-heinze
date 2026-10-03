@@ -1,0 +1,2 @@
+PASS: zero lintr findings; 28 tables, 2925 cells, 161 labels; seven balance denominator cases, one printed correction
+PASS: 113 original-file SHA256 hashes; 59 copied author-code files unchanged; cleaned experiment CSV byte-identical

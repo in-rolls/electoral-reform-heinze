@@ -1,0 +1,59 @@
+Loading required package: usethis
+
+Attaching package: ‘dplyr’
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+
+Attaching package: ‘gridExtra’
+
+The following object is masked from ‘package:dplyr’:
+
+    combine
+
+
+Attaching package: ‘lubridate’
+
+The following objects are masked from ‘package:base’:
+
+    date, intersect, setdiff, union
+
+See details in:
+Carlos Cinelli and Chad Hazlett (2020). Making Sense of Sensitivity: Extending Omitted Variable Bias. Journal of the Royal Statistical Society, Series B (Statistical Methodology).
+Skipping install of 'pwtest' from a local remote, the SHA1 (0.0.0.90) has not changed since last install.
+  Use `force = TRUE` to force installation
+Skipping install of 'pwtest' from a local remote, the SHA1 (0.0.0.90) has not changed since last install.
+  Use `force = TRUE` to force installation
+Skipping install of 'pwtest' from a local remote, the SHA1 (0.0.0.90) has not changed since last install.
+  Use `force = TRUE` to force installation
+Scale for y is already present.
+Adding another scale for y, which will replace the existing scale.
+Scale for y is already present.
+Adding another scale for y, which will replace the existing scale.
+Scale for y is already present.
+Adding another scale for y, which will replace the existing scale.
+Scale for y is already present.
+Adding another scale for y, which will replace the existing scale.
+Skipping install of 'pwtest' from a local remote, the SHA1 (0.0.0.90) has not changed since last install.
+  Use `force = TRUE` to force installation
+There were 50 or more warnings (use warnings() to see the first 50)
+Skipping install of 'pwtest' from a local remote, the SHA1 (0.0.0.90) has not changed since last install.
+  Use `force = TRUE` to force installation
+Scale for y is already present.
+Adding another scale for y, which will replace the existing scale.
+Scale for y is already present.
+Adding another scale for y, which will replace the existing scale.
+Scale for y is already present.
+Adding another scale for y, which will replace the existing scale.
+Scale for y is already present.
+Adding another scale for y, which will replace the existing scale.
+Warning message:
+No shared levels found between `names(values)` of the manual scale and the
+data's fill values. 
+[1] TRUE

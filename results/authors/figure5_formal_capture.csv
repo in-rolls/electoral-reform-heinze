@@ -1,0 +1,11 @@
+"dependent_var","direct_mean","direct_mean_se","indirect_mean","indirect_mean_se","ATE","ATE_se","CI_upper_95","CI_lower_95","p_value","N","title1","title2","names","indirect_mean_label","direct_mean_label","indirectlabel","directlabel","significance_level","val","variable_type"
+"sarpanch_maratha",0.330472103004292,0.0308821656587873,0.232432432432432,0.0219883928968039,0.0980396705718595,0.0379103887867296,0.172492604060958,0.0235867370827613,0.00994122877462119,603,"Means, by type of election","Direct election increases formal capture","President Maratha",0.232,0.33,"i","d",0.01,1,"Caste"
+"avg_prop_land_held_sarpanch_caste",0.442884231536926,0.0244828440342698,0.288701550387597,0.0183371730974224,0.154182681149329,0.030588585603313,0.214326765597564,0.0940385967010942,7.19764101032316e-07,382,"Means, by type of election","Direct election increases formal capture","Proportion land held
+by president's caste in
+village",0.289,0.443,"i","d",0.001,2,"Caste"
+"sarpanch_male",0.517094017094017,0.0327369404934818,0.356756756756757,0.0249379377767285,0.16033726033726,0.041153469032753,0.241159069890083,0.0795154507844375,0.000108725164416665,604,"Means, by type of election","Direct election increases formal capture","President male",0.357,0.517,"i","d",0.001,3,"Gender"
+"sarpanch_land_own_name",0.489177489177489,0.0329612996564348,0.334246575342466,0.0247251819299244,0.154930913835023,0.0412041490205676,0.235854449984604,0.0740073776854429,0.000186658458902509,596,"Means, by type of election","Direct election increases formal capture","President landed",0.334,0.489,"i","d",0.001,4,"Class"
+"three_four_wheeler",0.286324786324786,0.0296143236904567,0.167567567567568,0.0194426874994352,0.118757218757219,0.0354263498662201,0.188331467765499,0.0491829697489383,0.00085189786768063,604,"Means, by type of election","Direct election increases formal capture","President owns
+three/four-wheeler",0.168,0.286,"i","d",0.001,5,"Class"
+"pacca_house",0.615384615384615,0.0318719534794247,0.510810810810811,0.0260228754053447,0.104573804573805,0.0411462205184961,0.185381378679347,0.023766230468262,0.0112869481048132,604,"Means, by type of election","Direct election increases formal capture","President owns pacca
+house",0.511,0.615,"i","d",0.05,6,"Class"

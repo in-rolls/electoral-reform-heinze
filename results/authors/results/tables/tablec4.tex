@@ -1,0 +1,49 @@
+\begin{table}
+\centering
+\begin{talltblr}[         %% tabularray outer open
+caption={Joint prognosis of covariates},
+note{}={+ p \num{< 0.1}, * p \num{< 0.05}, ** p \num{< 0.01}, *** p \num{< 0.001}},
+note{ }={Each model is a linear regression of each main outcome on covariates, among the control group (indirectly elected councils). All regressions use robust standard errors. Citizen survey outcomes cluster SEs at the village council level.},
+]                     %% tabularray outer close
+{                     %% tabularray inner open
+colspec={Q[]Q[]Q[]Q[]Q[]Q[]},
+hline{2}={1-6}{solid, black, 0.05em},
+hline{28}={1-6}{solid, black, 0.05em},
+hline{1}={1-6}{solid, black, 0.08em},
+hline{32}={1-6}{solid, black, 0.08em},
+column{2-6}={}{halign=c},
+column{1}={}{halign=l},
+}                     %% tabularray inner close
+& President self-perception as main decision-maker in monthly meeting & President percevied as most influential actor in discussion & Proportion of time president spoke in discussion & Citizen nominated president as village representative to bureaucrat & Citizen reports president leads village events \\
+No. villages & $0.062$ & $0.017$ & $0.005$ & $0.013$ & $-0.024$ \\
+& ($0.038$) & ($0.037$) & ($0.010$) & ($0.020$) & ($0.020$) \\
+Population & $-0.000$ & $0.000$ & $0.000$ & $-0.000$** & $-0.000$ \\
+& ($0.000$) & ($0.000$) & ($0.000$) & ($0.000$) & ($0.000$) \\
+Percent SC pop. & $-0.107$ & $0.163$ & $0.156$* & $0.229$* & $0.344$** \\
+& ($0.171$) & ($0.167$) & ($0.067$) & ($0.112$) & ($0.118$) \\
+Distance to block (km) & $0.002$ & $-0.001$ & $-0.002$* & $0.000$ & $-0.000$ \\
+& ($0.002$) & ($0.002$) & ($0.001$) & ($0.002$) & ($0.001$) \\
+Time to block (hr) & $-0.019$ & $0.012$ & $0.001$ & $0.013$ & $-0.006$ \\
+& ($0.029$) & ($0.042$) & ($0.012$) & ($0.028$) & ($0.025$) \\
+Speed to block (km/hr) & $-0.000$ & $0.000$** & $0.000$ & $-0.000$ & $-0.000$ \\
+& ($0.000$) & ($0.000$) & ($0.000$) & ($0.000$) & ($0.000$) \\
+Pilgrimage sites & $-0.004$ & $0.004$ & $-0.007$ & $0.038$ & $0.055$+ \\
+& ($0.048$) & ($0.044$) & ($0.016$) & ($0.029$) & ($0.032$) \\
+Historic sites & $-0.086$ & $-0.034$ & $-0.048$* & $-0.026$ & $-0.085$+ \\
+& ($0.058$) & ($0.059$) & ($0.024$) & ($0.047$) & ($0.043$) \\
+Economic opportunities & $0.006$ & $0.016$ & $0.009$ & $0.069$* & $-0.003$ \\
+& ($0.050$) & ($0.046$) & ($0.017$) & ($0.031$) & ($0.034$) \\
+Electricity grid & $0.260$*** & $0.200$*** & $0.047$ & $-0.035$ & $-0.055$ \\
+& ($0.043$) & ($0.041$) & ($0.030$) & ($0.063$) & ($0.069$) \\
+Gender quota & $-0.168$*** & $-0.225$*** & $-0.119$*** & $-0.118$*** & $-0.050$+ \\
+& ($0.043$) & ($0.040$) & ($0.014$) & ($0.027$) & ($0.028$) \\
+OBC caste quota & $-0.110$* & $-0.029$ & $-0.002$ & $-0.011$ & $-0.017$ \\
+& ($0.053$) & ($0.052$) & ($0.019$) & ($0.034$) & ($0.033$) \\
+SC caste quota & $-0.093$+ & $-0.089$+ & $-0.021$ & $-0.072$* & $-0.043$ \\
+& ($0.053$) & ($0.045$) & ($0.016$) & ($0.033$) & ($0.034$) \\
+Num.Obs. & $354$ & $363$ & $362$ & $2164$ & $2133$ \\
+R2 & $0.082$ & $0.124$ & $0.211$ & $0.031$ & $0.017$ \\
+F.statistic & 4.033 & 28.024 & 9.101 & 4.687 & 1.858 \\
+F.p.value & 0 & 0 & 0 & 0 & 0.034 \\
+\end{talltblr}
+\end{table}

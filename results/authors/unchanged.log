@@ -1,0 +1,5 @@
+Warning in install.packages(pkg) :
+  'lib = "/Library/Frameworks/R.framework/Versions/4.6/Resources/library"' is not writable
+Error in install.packages(pkg) : unable to install packages
+Calls: source ... withVisible -> eval -> eval -> lapply -> FUN -> install.packages
+Execution halted

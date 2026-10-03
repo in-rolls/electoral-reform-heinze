@@ -1,0 +1,19 @@
+"dependent_var","direct_mean","direct_mean_se","indirect_mean","indirect_mean_se","ATE","ATE_se","CI_upper_95","CI_lower_95","p_value","N","significance_level","indirect_mean_label","direct_mean_label","indirectlabel","directlabel","title1","title2","names","val","variable_type"
+"sarpanch_uncontested",0.128205128205128,0.0219019051150734,0.409214092140921,0.0256310527811291,-0.281008963935793,0.0337141559932724,-0.214797091830518,-0.347220836041068,5.28192088450897e-16,603,0.001,0.409,0.128,"i","d","Means, by type of election","Direct election decreases informal capture","President elected
+unopposed",1,"Implicit"
+"resignation",0.0258620689655172,0.0104432546954245,0.233062330623306,0.0220390143606383,-0.20720026165779,0.0243881061712861,-0.159303673457299,-0.25509684985828,1.55688620511154e-16,601,0.001,0.233,0.026,"i","d","Means, by type of election","Direct election decreases informal capture","President reports
+resignation",2,"Implicit"
+"rich_landowner_influences_gp",0.0480349344978166,0.0141619052213421,0.13091922005571,0.0178274925683044,-0.0828842855578938,0.0227679390980217,-0.038167587313564,-0.127600983802224,0.000296292733537207,588,0.001,0.131,0.048,"i","d","Means, by type of election","Direct election decreases informal capture","President reports rich
+landowner influences
+council",3,"Explicit"
+"other_nominate_BDO",0.115412186379928,0.00855785499273667,0.167572463768116,0.00795011443366015,-0.0521602773881878,0.0135845729237298,-0.0254692324096639,-0.0788513223667118,0.000139315061998614,3603,0.001,0.168,0.115,"i","d","Means, by type of election","Direct election decreases informal capture","Citizen nominated former
+president/other villager
+as village representative
+to bureaucrat",4,"Explicit"
+"formersarpanch_otherperson_inauguralevents",0.147468818782098,0.00960763914844274,0.204786010124252,0.0086588903041382,-0.0573171913421528,0.0152050192890694,-0.0274417416354659,-0.0871926410488397,0.000183531196229003,3536,0.001,0.205,0.147,"i","d","Means, by type of election","Direct election decreases informal capture","Citizen reports former
+president/other villager
+leads village events",5,"Explicit"
+"resignation_reported",0.0300214438884918,0.00456397512617226,0.209729233593391,0.00872345460907964,-0.179707789704905,0.0197222011053479,-0.140958029303502,-0.218457550106308,2.02305822743888e-18,3578,0.001,0.21,0.03,"i","d","Means, by type of election","Direct election decreases informal capture","Citizen reports
+resignation",6,"Implicit"
+"resigned",0.0555555555555556,0.00970564401148537,0.193069306930693,0.0138943414998691,-0.137513751375138,0.01694851767538,-0.104265764518786,-0.170761738231491,1.08594231165364e-15,1366,0.001,0.193,0.056,"i","d","Means, by type of election","Direct election decreases informal capture","Resignation filed:
+Administrative data",7,"Implicit"

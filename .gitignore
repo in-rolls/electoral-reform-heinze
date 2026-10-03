@@ -1,0 +1,8 @@
+.DS_Store
+.Rhistory
+.RData
+Rplots.pdf
+__pycache__/
+.venv/
+work/
+original/

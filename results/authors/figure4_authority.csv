@@ -1,0 +1,16 @@
+"dependent_var","direct_mean","direct_mean_se","indirect_mean","indirect_mean_se","ATE","ATE_se","CI_upper_95","CI_lower_95","p_value","N","significance_level","title1","title2","names","indirect_mean_label","direct_mean_label","indirectlabel","directlabel","val","variable_type"
+"most_influential_gd",0.329059829059829,0.0307823215776882,0.178378378378378,0.0199293829531397,0.150681450681451,0.0366705825779344,0.222699263783575,0.0786636375793262,4.52331866616223e-05,604,0.001,"Means, by type of election","ATE estimate (diff. means)","President perceived as
+most influential actor in
+discussion",0.178,0.329,"i","d",1,"Perception"
+"prop_speakingtime_sarpanch",0.310598290598291,0.0109204736521693,0.258644986449865,0.00775033993048846,0.0519533041484261,0.0133912103196779,0.0782525567590589,0.0256540515377933,0.000116160892607257,603,0.001,"Means, by type of election","ATE estimate (diff. means)","Proportion of time
+president spoke in
+discussion",0.259,0.311,"i","d",2,"Behavior"
+"i_decide_masik_sabha",0.324786324786325,0.0306790227654988,0.210526315789474,0.021486752129677,0.114260008996851,0.0374550791606182,0.187820753729317,0.0406992642643855,0.00238596128486737,595,0.01,"Means, by type of election","ATE estimate (diff. means)","President self-perception
+as main decision-maker in
+monthly meeting",0.211,0.325,"i","d",3,"Perception"
+"sarpanch_nominate_BDO",0.664516129032258,0.0126461171046744,0.582880434782609,0.0104958799073523,0.081635694249649,0.0211191218836294,0.123130663231575,0.0401407252677226,0.000125760656586704,3603,0.001,"Means, by type of election","ATE estimate (diff. means)","Citizen nominated
+president as village
+representative to
+bureaucrat",0.583,0.665,"i","d",4,"Behavior"
+"sarpanch_inauguralevents",0.748349229640499,0.0117587927589962,0.616658996778647,0.0104324248056395,0.131690232861849,0.0205308544507416,0.172030103395218,0.0913503623284798,3.3510079207884e-10,3536,0.001,"Means, by type of election","ATE estimate (diff. means)","Citizen reports president
+leads village events",0.617,0.748,"i","d",5,"Behavior"

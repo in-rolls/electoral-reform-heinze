@@ -1,0 +1,56 @@
+Warning messages:
+1: package ‘gridExtra’ was built under R version 4.6.1
+2: `install_local()` was deprecated in devtools 2.5.0.
+ℹ Please use pak::pak("local::path") instead.
+3: The `size` argument of `element_rect()` is deprecated as of ggplot2 3.4.0.
+ℹ Please use the `linewidth` argument instead.
+4: No shared levels found between `names(values)` of the manual scale and the
+data's fill values.
+5: Using `size` aesthetic for lines was deprecated in ggplot2 3.4.0.
+ℹ Please use `linewidth` instead.
+6: Removed 28 rows containing non-finite outside the scale range (`stat_bin()`).
+7: In is.na(x) : is.na() applied to non-(list or vector) of type 'expression'
+8: In is.na(x) : is.na() applied to non-(list or vector) of type 'expression'
+9: In C_contour(x[[2]]) : gridGraphics cannot emulate labels on contour lines
+10: In C_contour(x[[2]]) : gridGraphics cannot emulate labels on contour lines
+11: In is.na(x) : is.na() applied to non-(list or vector) of type 'expression'
+12: In is.na(x) : is.na() applied to non-(list or vector) of type 'expression'
+13: In C_contour(x[[2]]) : gridGraphics cannot emulate labels on contour lines
+14: In C_contour(x[[2]]) : gridGraphics cannot emulate labels on contour lines
+15: In is.na(x) : is.na() applied to non-(list or vector) of type 'expression'
+16: In is.na(x) : is.na() applied to non-(list or vector) of type 'expression'
+17: In C_contour(x[[2]]) : gridGraphics cannot emulate labels on contour lines
+18: In C_contour(x[[2]]) : gridGraphics cannot emulate labels on contour lines
+19: In is.na(x) : is.na() applied to non-(list or vector) of type 'expression'
+20: In is.na(x) : is.na() applied to non-(list or vector) of type 'expression'
+21: In C_contour(x[[2]]) : gridGraphics cannot emulate labels on contour lines
+22: In C_contour(x[[2]]) : gridGraphics cannot emulate labels on contour lines
+23: In is.na(x) : is.na() applied to non-(list or vector) of type 'expression'
+24: In is.na(x) : is.na() applied to non-(list or vector) of type 'expression'
+25: In C_contour(x[[2]]) : gridGraphics cannot emulate labels on contour lines
+26: In C_contour(x[[2]]) : gridGraphics cannot emulate labels on contour lines
+27: Group "Formal capture measures": requested columns (2, 7) are not contiguous. The label will span columns 2 to 7.
+28: Group "Informal capture measures": requested columns (2, 8) are not contiguous. The label will span columns 2 to 8.
+29: Group "Formal capture measures": requested columns (2, 7) are not contiguous. The label will span columns 2 to 7.
+30: Group "Informal capture measures": requested columns (2, 7) are not contiguous. The label will span columns 2 to 7.
+31: In ovb_partial_r2_bound.numeric(r2dxj.x = r2dxj.x[i],  ... :
+  Implied bound on r2yz.dx greater than 1, try lower kd and/or ky. Setting r2yz.dx to 1.
+32: In is.na(x) : is.na() applied to non-(list or vector) of type 'expression'
+33: In is.na(x) : is.na() applied to non-(list or vector) of type 'expression'
+34: In C_contour(x[[2]]) : gridGraphics cannot emulate labels on contour lines
+35: In C_contour(x[[2]]) : gridGraphics cannot emulate labels on contour lines
+36: In is.na(x) : is.na() applied to non-(list or vector) of type 'expression'
+37: In is.na(x) : is.na() applied to non-(list or vector) of type 'expression'
+38: In C_contour(x[[2]]) : gridGraphics cannot emulate labels on contour lines
+39: In C_contour(x[[2]]) : gridGraphics cannot emulate labels on contour lines
+40: In is.na(x) : is.na() applied to non-(list or vector) of type 'expression'
+41: In is.na(x) : is.na() applied to non-(list or vector) of type 'expression'
+42: In C_contour(x[[2]]) : gridGraphics cannot emulate labels on contour lines
+43: In C_contour(x[[2]]) : gridGraphics cannot emulate labels on contour lines
+44: In is.na(x) : is.na() applied to non-(list or vector) of type 'expression'
+45: In is.na(x) : is.na() applied to non-(list or vector) of type 'expression'
+46: In C_contour(x[[2]]) : gridGraphics cannot emulate labels on contour lines
+47: In C_contour(x[[2]]) : gridGraphics cannot emulate labels on contour lines
+48: In is.na(x) : is.na() applied to non-(list or vector) of type 'expression'
+49: In is.na(x) : is.na() applied to non-(list or vector) of type 'expression'
+50: In C_contour(x[[2]]) : gridGraphics cannot emulate labels on contour lines

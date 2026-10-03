@@ -1,0 +1,54 @@
+\begin{table}
+\centering
+\begin{talltblr}[         %% tabularray outer open
+caption={The impact of direct election on de facto authority, by quotas},
+note{}={+ p \num{< 0.1}, * p \num{< 0.05}, ** p \num{< 0.01}, *** p \num{< 0.001}},
+note{ }={Each model is a linear regression of each main outcome on direct election. The left column does so among gender-reserved seats, the middle column for OBC/Open seats, and the right column for SC-reserved seats. All regressions use robust standard errors. Outcomes from the citizen survey use cluster robust standard errors at the council level.},
+]                     %% tabularray outer close
+{                     %% tabularray inner open
+colspec={Q[]Q[]Q[]Q[]},
+hline{2}={1-4}{solid, black, 0.05em},
+hline{1}={1-4}{solid, black, 0.08em},
+hline{37}={1-4}{solid, black, 0.08em},
+column{2-4}={}{halign=c},
+cell{1,3-8,10-15,17-22,24-29,31-36}{1}={}{halign=l},
+cell{2,9,16,23,30}{1}={c=4}{halign=l},
+}                     %% tabularray inner close
+& Gender-reserved seats & OBC/Open seats & SC-reserved seats \\
+President self-perception as main decision-maker in monthly meeting & President self-perception as main decision-maker in monthly meeting & President self-perception as main decision-maker in monthly meeting & President self-perception as main decision-maker in monthly meeting \\
+(Intercept) & 0.133*** & 0.218*** & 0.195*** \\
+& (0.025) & (0.027) & (0.037) \\
+Direct election & 0.187*** & 0.107* & 0.134* \\
+& (0.052) & (0.046) & (0.066) \\
+Num.Obs. & 286 & 403 & 191 \\
+R2 & 0.051 & 0.014 & 0.023 \\
+President perceived as most influential actor in discussion & President perceived as most influential actor in discussion & President perceived as most influential actor in discussion & President perceived as most influential actor in discussion \\
+(Intercept) & 0.070*** & 0.201*** & 0.132*** \\
+& (0.019) & (0.025) & (0.031) \\
+Direct election & 0.090* & 0.149** & 0.155* \\
+& (0.040) & (0.046) & (0.062) \\
+Num.Obs. & 292 & 409 & 194 \\
+R2 & 0.021 & 0.028 & 0.037 \\
+Proportion of time president spoke in discussion & Proportion of time president spoke in discussion & Proportion of time president spoke in discussion & Proportion of time president spoke in discussion \\
+(Intercept) & 0.202*** & 0.265*** & 0.245*** \\
+& (0.009) & (0.010) & (0.011) \\
+Direct election & 0.031+ & 0.065*** & 0.023 \\
+& (0.017) & (0.017) & (0.020) \\
+Num.Obs. & 291 & 408 & 194 \\
+R2 & 0.013 & 0.035 & 0.007 \\
+Citizen nominated president as village representative to bureaucrat & Citizen nominated president as village representative to bureaucrat & Citizen nominated president as village representative to bureaucrat & Citizen nominated president as village representative to bureaucrat \\
+(Intercept) & 0.531*** & 0.605*** & 0.537*** \\
+& (0.019) & (0.017) & (0.024) \\
+Direct election & 0.078* & 0.088*** & 0.071+ \\
+& (0.032) & (0.025) & (0.040) \\
+Num.Obs. & 1725 & 2437 & 1160 \\
+R2 & 0.006 & 0.008 & 0.005 \\
+Citizen reports president leads village events & Citizen reports president leads village events & Citizen reports president leads village events & Citizen reports president leads village events \\
+(Intercept) & 0.593*** & 0.629*** & 0.592*** \\
+& (0.019) & (0.016) & (0.025) \\
+Direct election & 0.096** & 0.141*** & 0.108** \\
+& (0.031) & (0.024) & (0.039) \\
+Num.Obs. & 1702 & 2389 & 1141 \\
+R2 & 0.009 & 0.022 & 0.012 \\
+\end{talltblr}
+\end{table}

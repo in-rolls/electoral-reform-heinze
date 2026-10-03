@@ -1,0 +1,25 @@
+\begin{table}
+\centering
+\begin{talltblr}[         %% tabularray outer open
+caption={The impact of direct election on de facto authority},
+note{}={+ p \num{< 0.1}, * p \num{< 0.05}, ** p \num{< 0.01}, *** p \num{< 0.001}},
+note{ }={Each model is a linear regression of each main outcome on direct election. All regressions use robust standard errors. Outcomes from the citizen survey use cluster robust standard errors at the council level.},
+]                     %% tabularray outer close
+{                     %% tabularray inner open
+colspec={Q[]Q[]Q[]Q[]Q[]Q[]},
+hline{2}={1-6}{solid, black, 0.05em},
+hline{6}={1-6}{solid, black, 0.05em},
+hline{1}={1-6}{solid, black, 0.08em},
+hline{8}={1-6}{solid, black, 0.08em},
+column{2-6}={}{halign=c},
+column{1}={}{halign=l},
+}                     %% tabularray inner close
+& President self-perception as main decision-maker in monthly meeting & President percevied as most influential actor in discussion & Proportion of time president spoke in discussion & Citizen nominated president as village representative to bureaucrat & Citizen reports president leads village events \\
+(Intercept) & $0.211$*** & $0.178$*** & $0.259$*** & $0.583$*** & $0.617$*** \\
+& ($0.021$) & ($0.020$) & ($0.008$) & ($0.014$) & ($0.014$) \\
+Direct election & $0.114$** & $0.151$*** & $0.052$*** & $0.082$*** & $0.132$*** \\
+& ($0.037$) & ($0.037$) & ($0.013$) & ($0.021$) & ($0.021$) \\
+Num.Obs. & $595$ & $604$ & $603$ & $3603$ & $3536$ \\
+R2 & $0.016$ & $0.030$ & $0.026$ & $0.007$ & $0.019$ \\
+\end{talltblr}
+\end{table}

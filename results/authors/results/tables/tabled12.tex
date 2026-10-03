@@ -1,0 +1,68 @@
+\begin{table}
+\centering
+\begin{talltblr}[         %% tabularray outer open
+caption={The impact of direct election on informal capture, by quotas},
+note{}={+ p \num{< 0.1}, * p \num{< 0.05}, ** p \num{< 0.01}, *** p \num{< 0.001}},
+note{ }={Each model is a linear regression of each informal capture outcome on direct election. The left column does so among gender-reserved seats, the middle column for OBC/Open seats, and the right column for SC-reserved seats. All regressions use robust standard errors. Outcomes from the citizen survey use cluster robust standard errors at the council level.},
+]                     %% tabularray outer close
+{                     %% tabularray inner open
+colspec={Q[]Q[]Q[]Q[]},
+hline{2}={1-4}{solid, black, 0.05em},
+hline{1}={1-4}{solid, black, 0.08em},
+hline{51}={1-4}{solid, black, 0.08em},
+column{2-4}={}{halign=c},
+cell{1,3-8,10-15,17-22,24-29,31-36,38-43,45-50}{1}={}{halign=l},
+cell{2,9,16,23,30,37,44}{1}={c=4}{halign=l},
+}                     %% tabularray inner close
+& Gender-reserved seats & OBC/Open seats & SC-reserved seats \\
+Citizen reports former president/other villager leads village events & Citizen reports former president/other villager leads village events & Citizen reports former president/other villager leads village events & Citizen reports former president/other villager leads village events \\
+(Intercept) & 0.209*** & 0.206*** & 0.203*** \\
+& (0.015) & (0.013) & (0.017) \\
+Direct election & -0.034 & -0.073*** & -0.021 \\
+& (0.023) & (0.018) & (0.027) \\
+Num.Obs. & 1702 & 2389 & 1141 \\
+R2 & 0.002 & 0.009 & 0.001 \\
+Citizen nominated former president/other villager as village representative to bureaucrat & Citizen nominated former president/other villager as village representative to bureaucrat & Citizen nominated former president/other villager as village representative to bureaucrat & Citizen nominated former president/other villager as village representative to bureaucrat \\
+(Intercept) & 0.172*** & 0.158*** & 0.186*** \\
+& (0.014) & (0.011) & (0.017) \\
+Direct election & -0.037+ & -0.053*** & -0.050+ \\
+& (0.021) & (0.016) & (0.026) \\
+Num.Obs. & 1725 & 2437 & 1160 \\
+R2 & 0.002 & 0.006 & 0.004 \\
+President reports rich landowner influences council & President reports rich landowner influences council & President reports rich landowner influences council & President reports rich landowner influences council \\
+(Intercept) & 0.140*** & 0.123*** & 0.147*** \\
+& (0.026) & (0.021) & (0.033) \\
+Direct election & -0.060 & -0.091*** & -0.064 \\
+& (0.037) & (0.025) & (0.046) \\
+Num.Obs. & 280 & 398 & 189 \\
+R2 & 0.008 & 0.025 & 0.009 \\
+Resignation filed: Administrative data & Resignation filed: Administrative data & Resignation filed: Administrative data & Resignation filed: Administrative data \\
+(Intercept) & 0.173*** & 0.223*** & 0.026 \\
+& (0.020) & (0.016) & (0.018) \\
+Direct election & -0.102*** & -0.158*** & 0.030 \\
+& (0.026) & (0.020) & (0.037) \\
+Num.Obs. & 579 & 1061 & 129 \\
+R2 & 0.021 & 0.045 & 0.006 \\
+Citizen reports resignation & Citizen reports resignation & Citizen reports resignation & Citizen reports resignation \\
+(Intercept) & 0.215*** & 0.263*** & 0.101*** \\
+& (0.025) & (0.024) & (0.022) \\
+Direct election & -0.202*** & -0.233*** & -0.071** \\
+& (0.027) & (0.026) & (0.026) \\
+Num.Obs. & 1711 & 2415 & 1157 \\
+R2 & 0.078 & 0.091 & 0.018 \\
+President reports resignation & President reports resignation & President reports resignation & President reports resignation \\
+(Intercept) & 0.237*** & 0.306*** & 0.083** \\
+& (0.031) & (0.029) & (0.025) \\
+Direct election & -0.218*** & -0.294*** & -0.028 \\
+& (0.034) & (0.031) & (0.037) \\
+Num.Obs. & 291 & 406 & 194 \\
+R2 & 0.082 & 0.132 & 0.003 \\
+President elected unopposed & President elected unopposed & President elected unopposed & President elected unopposed \\
+(Intercept) & 0.438*** & 0.440*** & 0.347*** \\
+& (0.037) & (0.032) & (0.043) \\
+Direct election & -0.259*** & -0.315*** & -0.210*** \\
+& (0.052) & (0.041) & (0.059) \\
+Num.Obs. & 291 & 408 & 194 \\
+R2 & 0.069 & 0.109 & 0.053 \\
+\end{talltblr}
+\end{table}

@@ -1,0 +1,1 @@
+PASS: row conservation, treatment join, raw mean identity, bootstrap sample/draws, independent CR2, cohort rank, nested covariance identity, result completeness.

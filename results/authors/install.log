@@ -1,0 +1,10 @@
+Warning: unable to access index for repository https://cloud.r-project.org/src/contrib:
+  cannot open URL 'https://cloud.r-project.org/src/contrib/PACKAGES'
+Warning: unable to access index for repository https://cloud.r-project.org/bin/macosx/sonoma-arm64/contrib/4.6:
+  cannot open URL 'https://cloud.r-project.org/bin/macosx/sonoma-arm64/contrib/4.6/PACKAGES'
+Warning message:
+packages ‘modelsummary’, ‘skimr’ are not available for this version of R
+
+Versions of these packages for your version of R might be available elsewhere,
+see the ideas at
+https://cran.r-project.org/doc/manuals/r-patched/R-admin.html#Installing-packages 

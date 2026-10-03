@@ -1,0 +1,61 @@
+\begin{table}
+\centering
+\begin{talltblr}[         %% tabularray outer open
+caption={The impact of direct election on formal capture, by quotas},
+note{}={+ p \num{< 0.1}, * p \num{< 0.05}, ** p \num{< 0.01}, *** p \num{< 0.001}},
+note{ }={Each model is a linear regression of each formal capture outcome on direct election. The left column does so among gender-reserved seats, the middle column for OBC/Open seats, and the right column for SC-reserved seats. All regressions use robust standard errors. Outcomes from the citizen survey use cluster robust standard errors at the council level.},
+]                     %% tabularray outer close
+{                     %% tabularray inner open
+colspec={Q[]Q[]Q[]Q[]},
+hline{2}={1-4}{solid, black, 0.05em},
+hline{1}={1-4}{solid, black, 0.08em},
+hline{44}={1-4}{solid, black, 0.08em},
+column{2-4}={}{halign=c},
+cell{1,3-8,10-15,17-22,24-29,31-36,38-43}{1}={}{halign=l},
+cell{2,9,16,23,30,37}{1}={c=4}{halign=l},
+}                     %% tabularray inner close
+& Gender-reserved seats & OBC/Open seats & SC-reserved seats \\
+President Maratha & President Maratha & President Maratha & President Maratha \\
+(Intercept) & 0.215*** & 0.345*** & 0.000 \\
+& (0.030) & (0.030) & (0.000) \\
+Direct election & 0.109* & 0.139** & 0.000 \\
+& (0.055) & (0.050) & (0.000) \\
+Num.Obs. & 291 & 408 & 194 \\
+R2 & 0.014 & 0.019 &  \\
+Proportion land held by president's caste in village & Proportion land held by president's caste in village & Proportion land held by president's caste in village & Proportion land held by president's caste in village \\
+(Intercept) & 0.310*** & 0.403*** & 0.091*** \\
+& (0.026) & (0.023) & (0.010) \\
+Direct election & 0.129** & 0.147*** & 0.100** \\
+& (0.044) & (0.036) & (0.031) \\
+Num.Obs. & 185 & 253 & 129 \\
+R2 & 0.048 & 0.064 & 0.101 \\
+President owns pacca house & President owns pacca house & President owns pacca house & President owns pacca house \\
+(Intercept) & 0.505*** & 0.558*** & 0.413*** \\
+& (0.037) & (0.032) & (0.045) \\
+Direct election & 0.127* & 0.111* & 0.094 \\
+& (0.060) & (0.049) & (0.074) \\
+Num.Obs. & 292 & 409 & 194 \\
+R2 & 0.015 & 0.012 & 0.008 \\
+President owns three/four-wheeler & President owns three/four-wheeler & President owns three/four-wheeler & President owns three/four-wheeler \\
+(Intercept) & 0.177*** & 0.213*** & 0.074** \\
+& (0.028) & (0.026) & (0.024) \\
+Direct election & 0.172** & 0.112* & 0.131* \\
+& (0.054) & (0.045) & (0.053) \\
+Num.Obs. & 292 & 409 & 194 \\
+R2 & 0.037 & 0.016 & 0.037 \\
+President landed & President landed & President landed & President landed \\
+(Intercept) & 0.212*** & 0.408*** & 0.183*** \\
+& (0.030) & (0.031) & (0.035) \\
+Direct election & 0.093+ & 0.149** & 0.150* \\
+& (0.054) & (0.051) & (0.066) \\
+Num.Obs. & 289 & 403 & 192 \\
+R2 & 0.011 & 0.021 & 0.029 \\
+President male & President male & President male & President male \\
+(Intercept) & 0.000 & 0.357*** & 0.355*** \\
+& (0.000) & (0.030) & (0.044) \\
+Direct election & 0.000 & 0.168*** & 0.138+ \\
+& (0.000) & (0.050) & (0.073) \\
+Num.Obs. & 292 & 409 & 194 \\
+R2 &  & 0.027 & 0.018 \\
+\end{talltblr}
+\end{table}
