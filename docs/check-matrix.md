@@ -47,6 +47,19 @@
 
 ## Paper-claim checks
 
+Control-group levels are assessed independently of estimator and clustering choices.
+The early-indirect shared-tenure mean is 66/158 (41.77%), versus 20/211 (9.48%)
+among later indirect councils. The 32.29-point within-regime decline is a material
+descriptive finding requiring a measurement, timing or institutional explanation.
+The question includes planned sharing, so interpreting the baseline as completed
+resignations is unjustified. No matched external benchmark establishes that the
+literal shared-tenure rate is impossible; its substantive plausibility remains
+unresolved. In contrast, unopposed selection stays near 40% in both indirect cohorts.
+The [recent-cohort audit](recent-cohort-audit.md) separately reports how sample
+restrictions and inference choices change all 17 survey contrasts. These checks
+do not supply a within-council pre/post outcome design or validate the comparison
+group simply because some associations survive.
+
 Component outcomes and paired categories were traced separately; no new composite index was built. Baselines, parity reference and heterogeneous quota levels were examined. Reform dose response is inapplicable to binary regime status; election-time plots show the relevant available timing. Mechanism claims were compared with exact questions and the author's own concessions. The analysis distinguishes vignette judgments, stated plans, observed discussion estimates and filed administrative events. Geographic/sampling restrictions accompany conclusions. No population or treatment-on-treated extrapolation was made. An external equal-third institutional norm is not established. Robustness results and null/borderline results are retained rather than selected for a preferred verdict.
 
 Rejected or narrowed criticisms include: parity disproves a relative authority gain; two citizen categories are exact complements; all resignations lack qualitative validation; direct councils necessarily have shorter administrative exposure; annual FE supplies a well-supported corrected effect; and every inferential sensitivity erases the authority result. See `measurement-review.md` and `inference.md` for evidence.
