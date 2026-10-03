@@ -1,0 +1,107 @@
+docker run --rm -v "/Users/soodoku/Documents/GitHub/in-rolls/heinze-electoral-reform:/audit" -w /audit python:3.14 bash -c 'pip install -r requirements-dev.txt && make ci-python'
+Unable to find image 'python:3.14' locally
+3.14: Pulling from library/python
+688faa5c505e: Pulling fs layer
+8dbc42934ae5: Pulling fs layer
+509699aefca8: Pulling fs layer
+edb4e1e7a400: Pulling fs layer
+49808fbe9b49: Pulling fs layer
+ccd9dba13ae3: Pulling fs layer
+1a48a960533f: Pulling fs layer
+688faa5c505e: Download complete
+dc16354c95ab: Download complete
+edb4e1e7a400: Download complete
+1420c867ee6c: Download complete
+49808fbe9b49: Download complete
+8dbc42934ae5: Download complete
+1a48a960533f: Download complete
+ccd9dba13ae3: Download complete
+ccd9dba13ae3: Pull complete
+1a48a960533f: Pull complete
+8dbc42934ae5: Pull complete
+509699aefca8: Download complete
+edb4e1e7a400: Pull complete
+509699aefca8: Pull complete
+688faa5c505e: Pull complete
+49808fbe9b49: Pull complete
+Digest: sha256:1ae5b32b33f502335ed9f5ee7afa4387192e9566b1328fc66da836c77c1cfb65
+Status: Downloaded newer image for python:3.14
+Collecting black==26.5.1 (from -r requirements-dev.txt (line 1))
+  Downloading black-26.5.1-py3-none-any.whl.metadata (95 kB)
+Collecting isort==8.0.1 (from -r requirements-dev.txt (line 2))
+  Downloading isort-8.0.1-py3-none-any.whl.metadata (11 kB)
+Collecting flake8==7.3.0 (from -r requirements-dev.txt (line 3))
+  Downloading flake8-7.3.0-py2.py3-none-any.whl.metadata (3.8 kB)
+Collecting click>=8.0.0 (from black==26.5.1->-r requirements-dev.txt (line 1))
+  Downloading click-8.5.0-py3-none-any.whl.metadata (2.6 kB)
+Collecting mypy-extensions>=0.4.3 (from black==26.5.1->-r requirements-dev.txt (line 1))
+  Downloading mypy_extensions-1.1.0-py3-none-any.whl.metadata (1.1 kB)
+Collecting packaging>=22.0 (from black==26.5.1->-r requirements-dev.txt (line 1))
+  Downloading packaging-26.3-py3-none-any.whl.metadata (3.5 kB)
+Collecting pathspec>=1.0.0 (from black==26.5.1->-r requirements-dev.txt (line 1))
+  Downloading pathspec-1.1.1-py3-none-any.whl.metadata (14 kB)
+Collecting platformdirs>=2 (from black==26.5.1->-r requirements-dev.txt (line 1))
+  Downloading platformdirs-4.12.3-py3-none-any.whl.metadata (5.5 kB)
+Collecting pytokens~=0.4.0 (from black==26.5.1->-r requirements-dev.txt (line 1))
+  Downloading pytokens-0.4.1-cp314-cp314-manylinux2014_aarch64.manylinux_2_17_aarch64.manylinux_2_28_aarch64.whl.metadata (3.8 kB)
+Collecting mccabe<0.8.0,>=0.7.0 (from flake8==7.3.0->-r requirements-dev.txt (line 3))
+  Downloading mccabe-0.7.0-py2.py3-none-any.whl.metadata (5.0 kB)
+Collecting pycodestyle<2.15.0,>=2.14.0 (from flake8==7.3.0->-r requirements-dev.txt (line 3))
+  Downloading pycodestyle-2.14.0-py2.py3-none-any.whl.metadata (4.5 kB)
+Collecting pyflakes<3.5.0,>=3.4.0 (from flake8==7.3.0->-r requirements-dev.txt (line 3))
+  Downloading pyflakes-3.4.0-py2.py3-none-any.whl.metadata (3.5 kB)
+Downloading black-26.5.1-py3-none-any.whl (213 kB)
+Downloading isort-8.0.1-py3-none-any.whl (89 kB)
+Downloading flake8-7.3.0-py2.py3-none-any.whl (57 kB)
+Downloading mccabe-0.7.0-py2.py3-none-any.whl (7.3 kB)
+Downloading pycodestyle-2.14.0-py2.py3-none-any.whl (31 kB)
+Downloading pyflakes-3.4.0-py2.py3-none-any.whl (63 kB)
+Downloading pytokens-0.4.1-cp314-cp314-manylinux2014_aarch64.manylinux_2_17_aarch64.manylinux_2_28_aarch64.whl (254 kB)
+Downloading click-8.5.0-py3-none-any.whl (125 kB)
+Downloading mypy_extensions-1.1.0-py3-none-any.whl (5.0 kB)
+Downloading packaging-26.3-py3-none-any.whl (129 kB)
+Downloading pathspec-1.1.1-py3-none-any.whl (57 kB)
+Downloading platformdirs-4.12.3-py3-none-any.whl (32 kB)
+Installing collected packages: pytokens, pyflakes, pycodestyle, platformdirs, pathspec, packaging, mypy-extensions, mccabe, isort, click, flake8, black
+
+Successfully installed black-26.5.1 click-8.5.0 flake8-7.3.0 isort-8.0.1 mccabe-0.7.0 mypy-extensions-1.1.0 packaging-26.3 pathspec-1.1.1 platformdirs-4.12.3 pycodestyle-2.14.0 pyflakes-3.4.0 pytokens-0.4.1
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager, possibly rendering your system unusable. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv. Use the --root-user-action option if you know what you are doing and want to suppress this warning.
+python3 analysis/preserve.py
+Verified 113 deposited files, archive bytes, and four sources.
+cd sources/institutions && shasum -a 256 -c SHA256SUMS
+act-ii-2020.pdf: OK
+act-liv-2018.pdf: OK
+maharashtra-ahead-feb2020.pdf: OK
+cd sources/preregistration && shasum -a 256 -c SHA256SUMS
+analysis-plan.pdf: OK
+registration.json: OK
+file-metadata.json: OK
+python3 -m unittest discover -s tests -v
+test_admin_exclusions_are_not_zeros (test_audit.AuditTests.test_admin_exclusions_are_not_zeros) ... ok
+test_author_artifacts_and_baselines (test_audit.AuditTests.test_author_artifacts_and_baselines) ... ok
+test_category_partition_and_missingness (test_audit.AuditTests.test_category_partition_and_missingness) ... ok
+test_counts_and_join_cardinality (test_audit.AuditTests.test_counts_and_join_cardinality) ... ok
+test_every_headline_mean_and_hc2_se (test_audit.AuditTests.test_every_headline_mean_and_hc2_se) ... ok
+test_exact_month_fixed_effects_cannot_identify_treatment (test_audit.AuditTests.test_exact_month_fixed_effects_cannot_identify_treatment) ... ok
+test_land_missingness_concentrated_in_early_cohort (test_audit.AuditTests.test_land_missingness_concentrated_in_early_cohort) ... ok
+test_balance_diagnostic_uses_actual_covariate_complete_cells (test_critical.CriticalAuditTests.test_balance_diagnostic_uses_actual_covariate_complete_cells) ... ok
+test_experiment_raw_flow_and_recoding (test_critical.CriticalAuditTests.test_experiment_raw_flow_and_recoding) ... ok
+test_experiment_unadjusted_effects_and_variance (test_critical.CriticalAuditTests.test_experiment_unadjusted_effects_and_variance) ... ok
+test_preregistration_matches_registered_digest (test_critical.CriticalAuditTests.test_preregistration_matches_registered_digest) ... ok
+test_sc_effects_and_saturated_interactions (test_critical.CriticalAuditTests.test_sc_effects_and_saturated_interactions) ... ok
+test_all_restrictions_means_counts_and_hc2 (test_recent.RecentCohortTests.test_all_restrictions_means_counts_and_hc2) ... ok
+test_bootstrap_records_actual_draw_space (test_recent.RecentCohortTests.test_bootstrap_records_actual_draw_space) ... ok
+test_latest_period_does_not_manufacture_independent_support (test_recent.RecentCohortTests.test_latest_period_does_not_manufacture_independent_support) ... ok
+test_primary_restriction_equals_existing_transition (test_recent.RecentCohortTests.test_primary_restriction_equals_existing_transition) ... ok
+
+----------------------------------------------------------------------
+Ran 16 tests in 0.127s
+
+OK
+python3 -m black --check analysis/*.py tests
+All done! ✨ 🍰 ✨
+8 files would be left unchanged.
+python3 -m isort --profile black --check-only analysis/*.py tests
+python3 -m flake8 analysis/*.py tests
+python3 analysis/write_readme.py --check
+README numerical tables match analysis outputs.

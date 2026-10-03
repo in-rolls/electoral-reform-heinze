@@ -2,9 +2,9 @@ PYTHON ?= python3
 RSCRIPT ?= Rscript
 export R_LIBS_USER = $(CURDIR)/work/authors-library
 
-.PHONY: all verify authors audit inference critical recent note test lint format deps
+.PHONY: all verify authors audit inference critical recent note readme test lint lint-python lint-r ci-python ci-docker format deps
 
-all: verify authors audit inference critical recent note lint test
+all: verify authors audit inference critical recent note readme lint test
 
 verify:
 	$(PYTHON) analysis/preserve.py
@@ -31,14 +31,27 @@ recent: verify
 note:
 	$(PYTHON) analysis/write_note.py
 
+readme:
+	$(PYTHON) analysis/write_readme.py
+
 test: verify
 	$(PYTHON) -m unittest discover -s tests -v
 
-lint:
+lint: lint-python lint-r
+
+lint-python:
 	$(PYTHON) -m black --check analysis/*.py tests
 	$(PYTHON) -m isort --profile black --check-only analysis/*.py tests
 	$(PYTHON) -m flake8 analysis/*.py tests
+
+lint-r:
 	$(RSCRIPT) -e 'x <- unlist(lapply(list.files("analysis", "[.]R$$", full.names=TRUE), lintr::lint), recursive=FALSE); print(x); if(length(x)) quit(status=1)'
+
+ci-python: test lint-python
+	$(PYTHON) analysis/write_readme.py --check
+
+ci-docker:
+	docker run --rm -v "$(CURDIR):/audit" -w /audit python:3.14 bash -c 'pip install -r requirements-dev.txt && make ci-python'
 
 format:
 	$(PYTHON) -m black analysis/*.py tests
