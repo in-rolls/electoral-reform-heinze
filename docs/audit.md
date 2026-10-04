@@ -1,10 +1,10 @@
-# Electoral reform: numerical audit
+# Electoral reform: numerical results
 
 The [interpretation of the evidence](interpretation.md) examines the broader causal
 argument, statutory changes, sensitivity calibration and preregistration. This note
 retains the original four-section numerical audit and its verification boundaries.
 
-The headline numbers reproduce. Their strongest defensible interpretation is a set of
+The headline numbers reproduce. They describe a set of
 differences in presidential voice, characteristics, and reported rotation across election
 regimes. The public deposit cannot establish comparable resignation exposure, separate
 reform effects from unrestricted cohort effects, or recover the full actor distributions.
@@ -46,7 +46,7 @@ All 18 unadjusted headline coefficients reconcile with raw group means.
 The vignette's adjusted effects also reproduce: male +4.881 pp and Maratha +13.885 pp,
 N=2,341; these concern perceived authority of hypothetical presidents.
 
-## B. Numerical or coding anomalies
+## B. Measurement and numerical details
 
 **Verified, minor denominator error.** Figure 3's indirect population mean SE is **223.518**,
 reproduced exactly by `helpers.R::ate_lm_robust`, which divides by √370 although
@@ -85,7 +85,7 @@ incumbent's current mandate. Whether turnover itself changes recorded treatment 
 is therefore a further unresolved construction question; affected cases cannot be counted
 from the release. [Official sources](institutions.md).
 
-## C. Identification/inference weaknesses that materially change results
+## C. Timing and inference
 
 **Timing changes the contrast.** The published early/direct/late means reproduce:
 
@@ -115,7 +115,7 @@ year FE, so adjustment does not uniformly erase the findings.
 167/234 direct, 209/211 late indirect**; all 142 councils elected in 2015 lack it.
 Indirect/direct missingness is 41.89%/28.63% (Pearson p=.00135), with much stronger cohort
 imbalance. The early comparison is +14.90 pp, SE 12.56 pp; the late comparison remains
-+15.43 pp, SE 3.07 pp. Thus the positive late-cohort association survives, but two equally
++15.43 pp, SE 3.07 pp. The late-cohort association is positive; two equally
 informative transition replications do not. Without assumptions about missing values,
 the full-sample descriptive difference is bounded by **[-27.06, 43.46] pp**,
 using only the measure's [0,1] support. These are identification bounds, not a confidence
@@ -159,9 +159,9 @@ single assumed endpoint for the 2020–22 survey would assign unverified exposur
 distributions, geographic FE/clustering/leaveouts and full citizen multinomial categories
 also remain unavailable. [Precise missing artifacts](data-dictionary.md).
 
-## D. Claims that remain supported after the audit
+## D. Summary of measured differences
 
-**Higher measured presidential authority survives the dependence checks.** Speaking rises
+**Measured presidential participation is higher under direct elections.** Speaking rises
 by 5.20 pp and perceived influence by
 15.07 pp; month-bootstrap p-values are
 0.0025 and
@@ -174,8 +174,8 @@ and most-influential share is 32.91%
 (26.84–38.97%). Distance from
 one-third is −2.27 and −0.43 pp; illustrative one-sample p-values are .0384 and .8897.
 One-third is not a substantively justified null: the questionnaire permits relatives,
-other participants and “none.” The paper itself notes 31% speaking and rejects an autocrat
-interpretation (p.13, footnote32). Aggregate near-parity also hides heterogeneity: direct
+other participants and “none.” The paper itself notes 31% speaking and distinguishes this from absolute executive
+control (p.13, footnote32). Aggregate near-parity also hides heterogeneity: direct
 women-reserved councils have 23.33% speaking/16.04% influence, versus 37.46%/46.88% elsewhere.
 The speaking treatment differences are +3.09 pp (CI −0.24 to 6.42) and +5.94 pp (2.45 to 9.42);
 HC2 interaction tests give p=.246 for speaking and p=.189 for influence, so the

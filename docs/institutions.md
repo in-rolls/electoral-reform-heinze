@@ -71,8 +71,8 @@ under both regimes. But its institutional account and Appendix do not separate t
 statutory components, and pp.5–6/Table 1 describe direct-president replacement through
 another village-wide vote without the 2020 qualification.
 
-The strongest defensible criticism is that the observed comparisons do not isolate
-election method or demonstrate a constant succession mechanism throughout the observation
+The observed comparisons combine
+election method with statutory powers and succession rules that change during the observation
 window. The original mechanism can still describe earlier expectations and behavior.
 The amendments do not show that respondents understood the changes, that rotation resumed,
 that a particular treatment code is wrong, or that the authority effect disappears.

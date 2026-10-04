@@ -26,17 +26,12 @@ def main():
     cohorts = {
         (r["variable"], r["period"]): r for r in rows("results/audit/cohort-means.csv")
     }
-    estimates = {
-        (r["specification"], r["variable"]): r
-        for r in rows("results/recent/estimates.csv")
-    }
     labels = {
         "most_influential_gd": "President judged most influential",
         "prop_speakingtime_sarpanch": "President speaking share",
         "resignation": "President reports shared tenure",
         "resignation_reported": "Citizen reports shared tenure",
         "sarpanch_uncontested": "President reports unopposed selection",
-        "sarpanch_inauguralevents": "Citizen says president leads events",
     }
     table = [
         "| Outcome | Indirect | Direct | Observed councils, indirect / direct |",
@@ -68,16 +63,6 @@ def main():
         cells.append(f"{result['n']}/{result['total']} councils observed")
     table.append("| " + " | ".join(cells) + " |")
     document = update_table(document, "land", table)
-    table = [
-        "| Outcome | Original pooled | Drop early indirect | Both regimes: 2018 onward | 2019 onward |",
-        "|---|---:|---:|---:|---:|",
-    ]
-    for variable in labels:
-        cells = [pct(means[variable]["difference"])]
-        for specification in ("drop_early_indirect", "since_2018", "since_2019"):
-            cells.append(pct(estimates[specification, variable]["difference"]))
-        table.append(f"| {labels[variable]} | " + " | ".join(cells) + " |")
-    document = update_table(document, "contrasts", table)
     if args.check:
         if document != original:
             raise SystemExit("README tables are stale; run make readme")

@@ -1,25 +1,18 @@
 # Electoral reform: interpretation of the evidence
 
-**The paper establishes meaningful empirical patterns and documents elite adaptation in
-particular villages. It does not establish its broad conclusion that direct elections
-preserve elite dominance by changing its form.** That conclusion requires evidence about
-continuing elite control and its consequences that the large-sample measures do not supply.
-The causal interpretation of the observational differences also remains conditional on
-unresolved timing and institutional assumptions.
+The study reports differences in presidential participation, officeholder characteristics
+and shared tenure across election regimes. Its village histories document elite adaptation
+in selected settings, and its vignette measures expectations about hypothetical presidents.
+Interpreting these findings together requires distinguishing composition, reported influence,
+actual decisions and the timing of institutional changes.
 
-This is a substantive criticism despite the successful numerical replication. All deposited
-tables and the checked main-figure labels reproduce. The strongest objections concern the
-meaning of capture, what the reform changed, and what the design separates. They do not
-depend on finding an arithmetic failure or making every coefficient insignificant.
+The [numerical results](audit.md), [measurement table](claims.md) and
+[diagnostic tables](diagnostics.md) provide the corresponding estimates and definitions.
+Diagnostic choices are documented in [methods](methods.md#exploratory-diagnostic-choices).
+Page references use the printed pages of the [paper](../sources/paper.pdf) and
+[appendix](../sources/appendix.pdf).
 
-This assessment extends the [four-section numerical audit](audit.md), rather than
-superseding its results. The [claim ledger](claims.md) records the paper's defenses
-and the evidence behind each verdict. New checks follow the
-[diagnostic decision record](methods.md#exploratory-diagnostic-choices); complete numerical results are
-in the [diagnostic tables](diagnostics.md). Page references below use the printed
-pages of the [paper](../sources/paper.pdf) and [appendix](../sources/appendix.pdf).
-
-## 1. Elite representation does not establish persistent capture
+## Officeholder composition and elite control
 
 The paper defines capture in terms of elites controlling institutions for their own ends,
 excluding marginalized people, and producing outcomes less aligned with those people's
@@ -30,36 +23,33 @@ Maratha +9.8 pp, male +16.0 pp, and caste land share +15.4 pp, for example. Thes
 holds office and their social advantages. They do not directly measure whose interests the
 officeholder serves or how residents can constrain that officeholder.
 
-This matters for the central conclusion, not merely the labels. Greater elite representation
+Greater elite representation
 and fewer reports of outside interference are compatible with several outcomes: continued
 capture, more accountable elite politicians, competition between elite factions, or changes
 in the distribution of influence among elites and nonelites. These proxies do not establish
-continuing elite control over comparable decisions or beneficiaries across regimes. The
-paper need not construct a single capture index or claim an exact numerical offset. But
-the joint pattern alone cannot discriminate persistent capture from more accountable elite
-leadership, or establish that democratic deepening has failed.
+continuing elite control over comparable decisions or beneficiaries across regimes. The joint
+pattern is consistent with both persistent capture and more accountable elite
+leadership; distinguishing these possibilities requires evidence on decisions and accountability.
 
-The strongest supporting evidence is qualitative. The main cases and Appendix E
+The qualitative evidence supplies observations of these processes. The main cases and Appendix E
 describe coercion, proxy selection, dynastic continuity, silenced citizens, and concrete
 decisions favoring powerful people. In Shelgaon, the direct president comes from the
 established ruling family; Appendix E also describes a family that influenced politics
-before holding the direct presidency. These are substantive observations of the proposed
-process. These cases document established elites adapting.
+before holding the direct presidency. These cases document established elites adapting.
 
-But the seven 2024 comparison councils come from one Pune block, with one initial random
+The seven 2024 comparison councils come from one Pune block, with one initial random
 selection and nearby matched cases thereafter (Appendix A, pp.4–5). That is useful for
 tracing processes; it does not estimate how often adaptation occurs across the survey sample
 or demonstrate persistent control across the sample. Earlier fieldwork is broader, but it does not turn
-these matched cases into a representative transition panel. **Verdict: adaptation is
-documented in selected cases; sample-wide elite invariance is insufficiently established.**
+these matched cases into a representative transition panel. The cases document adaptation
+in those settings; its prevalence across the survey population is not estimated.
 
-## 2. The assignment argument does not separate electoral regime, time, and legal powers
+## Election timing and statutory powers
 
-The historical assignment defense deserves weight. Election cycles predate the reform,
+Election cycles predate the reform,
 administrators schedule elections, and the policy changes were reportedly difficult for
 villages to anticipate. Published balance diagnostics and historical establishment checks
-provide evidence against some forms of strategic selection (pp.7–9; Appendix C). This is
-more than an arbitrary comparison of villages that chose different constitutions.
+provide evidence against some forms of strategic selection (pp.7–9; Appendix C).
 
 However, even an as-if-random phase in an electoral cycle assigns both a regime and the
 age of the council term at observation. A difference in rotation, accumulated experience,
@@ -68,11 +58,12 @@ from the release, although the survey spans 2020–22. The election item asks wh
 current president was elected, which need not identify the original council term. These
 are unseparated channels, not demonstrated estimates of bias.
 
-The shared-tenure outcome exposes the problem: the published early indirect, direct and
+For shared tenure, the published early indirect, direct and
 late indirect percentages, 41.8/2.6/9.5, reproduce as 41.77%, 2.59%, 9.48%.
 The same indirect regime has sharply different cohort levels. That does not prove an
-exposure explanation, since the question includes future plans. It does require an account
-of timing, selection and measurement before the pooled gap can carry the causal story.
+exposure explanation, since the question includes future plans. A causal interpretation of the
+pooled gap requires accounting
+for timing, selection and measurement.
 Comparing the same direct cohort with early and late indirect councils does not constitute
 two independent replications. Exact-month fixed effects cannot identify a separate regime
 coefficient, but that algebra alone does not invalidate a historically justified design.
@@ -88,20 +79,20 @@ gap; by the survey period some provisions had been generalized. The histories ne
 matched to interviews. The paper mentions a political aim of centralized powers (p.6),
 but does not isolate these statutory changes from the method of election.
 
-There is a more direct problem with Table 1 and pp.5–6: they describe village-wide
+Table 1 and pp.5–6 describe village-wide
 replacement elections after a direct president leaves. That matches the earlier rule,
 but section 8 of the 2020 Act provides for replacement from among council members,
 subject to protection for vacancy procedures already begun. This qualification matters
 to the theory that direct-election succession makes rotation less credible. It also raises
 the possibility that a successor is recorded as indirect in a council that began under
-the direct regime. The deposited histories cannot quantify that possibility. **Verdict:
-the categorical institutional description is incomplete for the study period; neither a
-pure election-method effect nor the composition mechanism has been isolated.**
+the direct regime. The deposited histories cannot quantify that possibility. The observed
+regime comparisons combine election method, officeholder selection and changes in statutory
+powers and succession rules.
 See the [dated statutory comparison](institutions.md#follow-up-audit-powers-and-succession).
 
-## 3. Several capture indicators cannot distinguish the proposed process from alternatives
+## Interpretation of the capture indicators
 
-The exact words and denominators matter more here than additional regression controls.
+The indicators differ in wording, respondent and denominator.
 
 - **Shared tenure:** the published 23.3% versus 2.6% refers to past or planned tenure
   sharing, not simply completed resignation. The original categories are unavailable.
@@ -122,8 +113,8 @@ The exact words and denominators matter more here than additional regression con
   of 6/159 early indirect,
   167/234 direct, and
   209/211 late indirect
-  councils. The late comparison remains positive. The claim of comparable evidence from
-  both transitions does not hold for this measure.
+  councils. The late comparison remains positive. The early-transition comparison has limited
+  observed support for this measure.
 - **Citizen corroboration:** the authority and outsider categories come from two shared
   questions, and citizens are purposively chosen informants. These provide several
   perspectives but fewer independent measurements than the count of coefficients suggests.
@@ -137,16 +128,17 @@ The administrative result is harder evidence of filed events:
 5.56%. Its exposure problem remains unresolved.
 Direct councils are not shown to have less time
 at risk; their terms
-could be older under the reform timeline. **Verdict: several specific differences are
-credible; their translation into comparable measures of informal and total capture is
-not established.** Exact items, variables and full arithmetic are in the
-[dictionary](data-dictionary.md) and [existing audit](audit.md).
+could be older under the reform timeline. The reported differences concern distinct
+measures of selection, influence and turnover. Their comparability as measures of capture
+depends on the definitions, reporting processes and exposure windows. Exact items,
+variables and full arithmetic are in the
+[dictionary](data-dictionary.md) and [numerical results](audit.md).
 
-## 4. The sensitivity reassurance uses a weakly justified benchmark
+## Sensitivity to omitted confounding
 
 The paper argues that confounders more than three times as strong as the gender quota are
 implausible because the quota strongly predicts outcomes (p.8; Appendix D.1.5 and D.2.5).
-But the calculation bounds **both** the confounder's association with treatment and its
+The calculation bounds **both** the confounder's association with treatment and its
 association with the outcome. Strong outcome prediction does not justify a small bound
 on treatment prediction. The official
 [sensemakr reference](https://carloscinelli.com/sensemakr/reference/sensemakr.html)
@@ -154,32 +146,33 @@ defines these as separate inputs.
 
 The original code reproduces. For speaking share, the 3× scenario permits the confounder
 to explain 0.979% of residual treatment variation and
-61.82% of residual outcome variation. That is a very asymmetric
-restriction. For the housing indicator, the permitted outcome association is only
+61.82% of residual outcome variation. The permitted treatment and
+outcome associations therefore differ substantially. For the housing indicator, the permitted
+outcome association is only
 0.00144%; for shared tenure it is
 0.00715%. Those scenarios barely change the coefficients because the
-quota predicts these particular outcomes so weakly. Outcome importance cannot justify
-the blanket reassurance for all outcomes.
+quota explains little variation in these particular outcomes. The informativeness of
+this benchmark therefore differs across outcomes.
 
 Unbenchmarked equal-strength robustness values supply more informative context. In the
 author's ordinary linear models, loss of conventional significance requires explaining
 2.55% of residual treatment and outcome variation for
 housing, 6.40% for speaking, and
 19.16% for shared tenure. These are conditional
-sensitivity quantities, not probabilities that confounding exists. They show that the
-evidence is not uniformly fragile or uniformly protected by the quota benchmark.
+sensitivity quantities, not probabilities that confounding exists. The sensitivity to omitted
+confounding varies across outcomes.
 
 The sensitivity models use ordinary `lm`, including for citizen outcomes, while the main
 citizen estimates use GP-clustered inference. The t-value sensitivity plots therefore do
-not establish robustness of the main clustered tests. **Verdict: the arithmetic is correct;
-the interpretation of the benchmark overstates the defense against confounding.**
+not directly describe sensitivity of the main clustered tests. The arithmetic reproduces;
+its interpretation is conditional on the treatment-side and outcome-side benchmark strengths.
 All 17 models and 51 bound scenarios are retained, including a boundary case for male
-officeholding; no alternative benchmark was selected to overturn results.
+officeholding; the calculations use the original benchmark throughout.
 
-## 5. The vignette supports a narrower mechanism claim
+## Vignette results and institutional mechanisms
 
-The paper's heading that formal capture causes an authority boost (p.15) exceeds the
-experiment's actual intervention. Respondents see caste and gender descriptions of a
+The experiment addresses expectations about presidential authority. Respondents see caste
+and gender descriptions of a
 hypothetical president in a Maratha-majority village. They predict who would make
 decisions. The experiment varies neither election rules, elite control, actual governing
 behavior, nor policy beneficiaries. Caste identity and membership of the village majority
@@ -191,17 +184,17 @@ The published adjusted +4.9 pp male and +13.9 pp Maratha effects reproduce as
 13.88 pp
 (10.20 to 17.57).
 They are meaningful effects on expectations under the specified vignette. The paper
-explicitly concedes that the experiment does not identify causal mediation (p.16,
+notes that the experiment does not identify causal mediation (p.16,
 footnote 44), and that formal capture bundles attributes and uses of power (p.13,
-footnote 33). The objection is to transporting the experimental result into real-world
-capture and adaptation, not to an undisclosed mediation estimator.
+footnote 33). The experimental estimand concerns expectations under the vignette. Connecting it to
+real-world capture and adaptation requires additional evidence.
 
 The preregistration checks do not reveal a substantive departure in the main quantitative
 analyses. The plan was registered on 18 October 2024, explicitly after implementation but
 before the author received data. Its timing is disclosed. The sample also reconciles:
 2,368 raw records, 2,366 assigned respondents,
 2347 valid authority answers, and
-2341 adjusted observations. An apparent sample-size error is rejected.
+2341 adjusted observations. The reported sample sizes reconcile.
 The preregistered exploratory qualitative follow-up answers are not released, so complete
 compliance cannot be verified. [Preserved plan and comparison](registration.md).
 
@@ -226,28 +219,26 @@ and institutional effects remain possible. The treatment-by-SC interactions are 
 distinguished from zero: p=0.913 for influence and
 p=0.113 for speaking. Thus these results do not establish
 that reservation amplifies the authority effect. Appendix H appropriately calls the
-evidence suggestive. **Verdict: identity affects expected authority; the proposed
-institutional mediation and general escape from capture remain unestablished.**
+evidence suggestive. The vignette identifies effects on expected authority; the SC
+comparisons do not identify mediation or amplification by reservation.
 
-## What remains persuasive
+## Observed presidential participation
 
 Presidential voice is greater on the measured outcomes: speaking rises from
 25.86% to 31.06%, and the share judged most
 influential rises from 17.84% to
-32.91%. These differences survive the implemented election-month
-dependence checks. Near-one-third levels do not refute a comparative gain; the paper
-itself explicitly rejects an autocrat interpretation. They support greater measured voice,
+32.91%. These differences have positive intervals under the implemented election-month
+inference procedures. These levels describe a comparative gain; the paper
+distinguishes the measures from absolute executive control. They support greater measured voice,
 subject to the observational design for causal attribution, rather than a finding about
 all dimensions of governing power.
 
-Different officeholder characteristics, less reported rotation, and less reported outside
-influence also remain visible. Some inferential claims weaken under clustering, but making
-a p-value cross .05 is not the central critique. The qualitative evidence establishes that
-coercion and elite adaptation occur. The randomized vignette establishes differences in
-expected authority. The broad claim that the reform preserves elite dominance requires
-additional evidence beyond this combination.
+The sample also has different officeholder characteristics, less reported rotation and
+less reported outside influence under direct elections. Clustering changes uncertainty
+for some contrasts. Village histories and vignette responses provide distinct kinds of
+evidence on adaptation and expected authority.
 
-## Evidence that would change the verdict
+## Additional data and scope
 
 The scope is also narrower than general claims about decentralized democracy. Appendix G
 collects expert predictions and qualitative accounts from other Indian states. Those
@@ -257,17 +248,18 @@ and social settings. The appendix itself describes the evidence as suggestive.
 
 The highest-value extension is an anonymized history linking original council election
 dates, interview dates, incumbent succession, applicable legal rules, and administrative
-event and censoring dates. It could reveal whether the regime comparisons survive comparable
+event and censoring dates. It would allow regime comparisons at comparable
 exposure and unchanged treatment classification. The exposure bias could favor either account.
 
 To establish adaptation at scale, the study needs linked identities or family/network codes
 for pre-reform brokers and post-reform officeholders, together with comparable measures of
 who determines decisions and who benefits. Stable elite control on those measures, despite
 changed routes to office, would strengthen the invariance claim. Meaningful gains in
-accountability or marginalized participation would weaken it even if presidents become richer.
+accountability or marginalized participation would indicate a different institutional outcome
+even if presidents become richer.
 
 Full original survey categories, actor distributions, anonymized district/taluka identifiers,
 and the raw-to-analysis cleaning code would resolve important measurement and inference
-questions. No third-party contact was made. The present evidence does not establish that
-the paper's broad theory is false; it establishes that its most ambitious conclusion is
-not identified by the reported large-sample tests.
+questions. Representative longitudinal evidence on elite networks, decisions and
+beneficiaries would clarify the relationship between these observed differences and
+the proposed institutional mechanism.

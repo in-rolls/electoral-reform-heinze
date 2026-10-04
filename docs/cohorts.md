@@ -1,16 +1,16 @@
-# What survives when older election cohorts are removed?
+# Results by election cohort
 
-**The timing concern is severe for reported shared tenure. Several other associations
-survive.** Removing early indirect councils reduces the president-reported gap by
+Shared-tenure contrasts are smaller when earlier indirect councils are excluded.
+Removing those councils reduces the president-reported gap by
 66.7% and the citizen-reported gap by 78.1%.
-Removing older direct councils as well weakens perceived influence substantially.
+Removing older direct councils also reduces the perceived-influence contrast.
 Speaking share, unopposed selection and citizen-reported event leadership remain different
 in the recent comparisons, though precision depends on the inference method.
 
 All 17 survey outcomes and all specified restrictions are retained below. See the
 [decision record](methods.md#cohort-restrictions) and [complete output](../results/recent/estimates.csv).
 
-## 1. The high early rates are real summaries of the deposited variables
+## Shared tenure and unopposed selection
 
 | Outcome | Early indirect | All direct | Later indirect |
 |---|---:|---:|---:|
@@ -40,9 +40,9 @@ The within-indirect decline is about 32 percentage points for both tenure measur
 unopposed selection remains near 40%. That is a specific timing/measurement problem for
 shared tenure, not a general collapse of every early-indirect outcome. President speaking
 and influence levels also barely differ between early and late indirect councils; the
-weaker influence result below arises when older *direct* councils are removed.
+smaller influence contrast below arises when older *direct* councils are removed.
 
-## 2. “Latest period” has several meanings, with very different support
+## Sample support by election cutoff
 
 | Restriction | Councils, indirect / direct | Election-month clusters, indirect / direct |
 |---|---:|---:|
@@ -64,7 +64,7 @@ equal-exposure comparisons. Interview dates were not released. All later indirec
 are compared with earlier direct councils even in the 2019-onward sample, so the filter
 does not separate calendar time or term age from election method.
 
-## 3. Effect sizes as the comparison becomes more recent
+## Contrasts across election cutoffs
 
 All entries are **direct minus indirect, in percentage points**. An attenuation percentage
 describes the change in this contrast; it is not an estimate of the share of a causal effect
@@ -110,7 +110,7 @@ with 6 direct election-month clusters. Its month-CR2 p-value is
 This is an increase in the estimated difference with fragile precision, not disappearance
 of the composition association.
 
-## 4. All outcomes, denominators and inference
+## All outcomes, denominators and inference
 
 Original-method inference uses HC2 for council outcomes and GP CR2 for citizen outcomes.
 Month CR2 clusters on election month–year and uses small-sample degrees of freedom;
@@ -124,7 +124,7 @@ Wild inference uses null-imposed Rademacher weights, fnw11, seed 20261003, and r
 are enumerated instead; its Monte Carlo sampling error is zero conditional on that
 bootstrap distribution. Actual draw counts, MC SEs, bootstrap intervals, month degrees
 of freedom and all missingness denominators are in the CSV. The table does not apply a
-multiplicity correction, and values near .05 are not treated as categorical verdicts.
+multiplicity correction, and values near .05 are not treated as categorical conclusions.
 
 ### All direct + later indirect
 

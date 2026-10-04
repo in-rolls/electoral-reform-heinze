@@ -26,7 +26,7 @@ The downloaded PDF SHA-256 matches the digest stored in the registration itself.
 
 The plan fixes the hypothetical president's age, one year in office, and a Maratha-majority
 village. The pilot discussion on p.3 explicitly explains adding majority information after
-participants challenged the notion of dominance without population context. Consequently,
+participants requested population context for interpreting dominance. Consequently,
 the caste contrast is a bundled identity/majority-position contrast in that setting, not an
 estimate holding numerical group status constant. It is also an experiment on expectations,
 not observed administration.
