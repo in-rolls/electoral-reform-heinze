@@ -17,7 +17,7 @@ The survey covers 604 Maharashtra gram panchayats: 234 with directly elected pre
 
 <!-- /generated:authority -->
 
-Directly elected presidents have higher observed speaking shares and are more often judged most influential. Understanding the indirect-president levels also requires information about the other participants. The intended discussion includes the president, vice president and bureaucrat, but the instrument permits additional participants and a “none” response. Other actors' shares and attendance are unavailable, so one-third is only a descriptive reference. [Outcome definitions](docs/data-dictionary.md#authority-outcomes).
+Directly elected presidents have higher observed speaking shares and are more often judged most influential. The indirect-president baseline needs an institutional explanation: the formal council head accounts for about a quarter of speaking time and is judged most influential in fewer than one in five discussions. Bureaucratic expertise, proxy officeholding and authority exercised with little speech are possible explanations; the released president-only measures cannot distinguish them. The intended discussion includes the president, vice president and bureaucrat, but the instrument permits additional participants and a “none” response. Other actors' shares and attendance are unavailable, so one-third is only a descriptive reference. [Outcome definitions](docs/data-dictionary.md#authority-outcomes).
 
 ## Shared tenure and election cohorts
 
@@ -35,11 +35,34 @@ Shared-tenure reports differ substantially between the two indirect-election coh
 
 Removing early indirect councils reduces the shared-tenure contrasts; also removing older direct councils reduces the most-influential contrast. Speaking shares and citizen-reported event leadership remain higher, and unopposed-selection reports remain lower, among direct presidents in the recent comparisons. The 2019-onward sample has only 27 direct councils versus 211 indirect councils. [All 17 outcomes, counts and confidence intervals](docs/cohorts.md).
 
-## Measurement and coverage
+Direct-minus-indirect differences, in percentage points:
 
-Unopposed reports can refer to different selection stages under the two electoral systems. Landowner-influence reports come from presidents, and some citizen authority and influence indicators are categories of the same questions. These distinctions matter when comparing the measures across regimes.
+<!-- generated:contrasts -->
 
-Officeholder caste, gender and assets describe composition. Selected village histories document elite adaptation, and the vignette measures expectations about hypothetical presidents. Representative evidence on decision-making and beneficiaries would help connect those measures to changes in elite control. [Interpretation and supporting evidence](docs/interpretation.md).
+| Outcome | Original pooled | Drop early indirect | Both regimes: 2018 onward | 2019 onward |
+|---|---:|---:|---:|---:|
+| President judged most influential | 15.07 | 15.37 | 5.72 | 4.69 |
+| President speaking share | 5.20 | 5.13 | 5.17 | 6.10 |
+| President reports shared tenure | -20.72 | -6.89 | -5.95 | -2.07 |
+| Citizen reports shared tenure | -17.97 | -3.93 | -4.61 | -3.21 |
+| President reports unopposed selection | -28.10 | -26.23 | -21.61 | -27.94 |
+| Citizen says president leads events | 13.17 | 15.56 | 15.53 | 17.16 |
+
+<!-- /generated:contrasts -->
+
+Dropping early indirect councils retains all direct councils. The 2018 and 2019 cutoffs instead restrict both arms, leaving 86 and 27 direct councils against 211 later indirect councils. These are different comparisons. The within-indirect change from 41.8% to 9.5% requires an explanation involving calendar time, term age, rotation norms, replacement or reporting before the pooled difference is attributed to election method. Missing interview and term-start dates prevent separating these explanations.
+
+## Selection institutions and reporting
+
+An unopposed selection among council members and an unopposed village-wide election arise from different candidate pools and nomination processes. The deposited question does not establish which selection stage indirect presidents describe, limiting comparability as a measure of capture.
+
+Rich-landowner influence falls from about 13.1% to 4.8% in presidents' reports. Electoral reform can change both who holds the presidency and the reporter's incentives. Elites moving into office and changes in acknowledged dependence are possible explanations; the item does not independently measure total elite influence. Some citizen authority and outside-influence indicators are also categories of the same two questions, rather than independent measurements. [Definitions and code](docs/data-dictionary.md).
+
+## Officeholder composition and elite control
+
+Officeholder caste, gender and assets describe composition. Selected village histories document elite adaptation, and the vignette measures expectations about hypothetical presidents. Neither advantaged officeholding nor fewer reports of outside influence directly establishes whose interests determine decisions or whether accountability improves. Persistent capture and more accountable elite leadership are both compatible with that pattern. Representative evidence on decisions and beneficiaries is needed to distinguish them. [Interpretation and supporting evidence](docs/interpretation.md).
+
+## Coverage, exposure and uncertainty
 
 The caste-land measure is a bureaucrat's approximate assessment. Its coverage varies by cohort:
 
@@ -51,7 +74,11 @@ The caste-land measure is a bureaucrat's approximate assessment. Its coverage va
 
 <!-- /generated:land -->
 
-Original observational responses, construction code, interview dates, administrative event dates and geographic identifiers are not included in the release. Their availability would permit further measurement, exposure and dependence analyses. [Methods and data limits](docs/methods.md).
+Only 382 of 604 councils have this measure, and just six are early indirect councils. The pooled land comparison therefore mainly represents the direct and later indirect cohorts.
+
+Administrative filed resignations are a separate outcome: 19.3% of indirect versus 5.6% of direct councils have at least one recorded event. A cumulative event indicator depends on time at risk. Election, event and record dates are unavailable, so comparable-exposure risks cannot be estimated; the direction of exposure bias is not established.
+
+Election-month clustering changes uncertainty for some outcomes. District/taluka identifiers are absent, preventing geographic clustering and fixed-effects checks. Original observational responses, construction code and interview dates are also unavailable. Clustering cannot resolve outcome definitions or cohort comparability. [Methods and data limits](docs/methods.md).
 
 ## Replication materials
 
