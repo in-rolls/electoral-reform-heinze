@@ -2,7 +2,7 @@
 
 import argparse
 
-from write_note import ROOT, pct, rows
+from report_utils import ROOT, pct, rows
 
 
 def update_table(document, name, lines):

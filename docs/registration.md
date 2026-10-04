@@ -2,8 +2,7 @@
 
 The main experimental hypotheses, outcome coding and model specifications match the
 preserved analysis plan. The plan explicitly discloses registration after implementation
-but before the author received the data. That is analysis preregistration, not a concealed
-claim that fieldwork had yet to occur. This audit cannot independently verify when the
+but before the author received the data. The registration concerns analysis after fieldwork. This audit cannot independently verify when the
 author first accessed data or reconstruct unprovided randomization logs.
 
 ## Original sources
@@ -34,7 +33,7 @@ not observed administration.
 
 ## Sample flow and uncertainty
 
-The [generated diagnostics](critical-diagnostics.md#experiment-reconciliation) reconcile
+The [generated diagnostics](diagnostics.md#experiment-reconciliation) reconcile
 raw records, assignments, valid responses and covariate-complete observations. All four
 assignment cells' missing counts are retained. The main-text N corresponds to valid
 authority answers, while the cell counts describe assigned respondents. This is not a
@@ -48,7 +47,7 @@ The sampling uses selected sites and a random-walk procedure within gender/ethni
 random treatment assignment does not make it a population probability sample.
 
 Table F.3 contains extreme joint HC2 balance tests for two conditions. The
-[retained balance diagnostic](critical-diagnostics.md#experimental-balance-sparse-cell-diagnosis)
+[retained balance diagnostic](diagnostics.md#experimental-balance-sparse-cell-diagnosis)
 shows their sensitivity to seven respondents in sparse religion categories with no Maratha
 assignments. It also reports realized respondent-gender imbalance across the four conditions.
 Thus this audit does not certify that every covariate is balanced or that assignment was
@@ -56,6 +55,5 @@ implemented correctly. The prespecified gender adjustment remains in the substan
 and the sparse-category respondents are retained. Neither the extreme Wald statistics nor
 their sensitivity alone demonstrates randomization failure.
 
-No allegation of selective analysis or improper preregistration is supported by these
-checks. The substantive limitation is transport from hypothetical social identity to actual
-elite capture and institutional mediation.
+The main quantitative analyses match the registered plan. The substantive limitation is
+transport from hypothetical social identity to actual elite capture and institutional mediation.

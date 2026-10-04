@@ -7,9 +7,8 @@ Removing older direct councils as well weakens perceived influence substantially
 Speaking share, unopposed selection and citizen-reported event leadership remain different
 in the recent comparisons, though precision depends on the inference method.
 
-These are empirical restrictions on the same deposited data, not theoretical objections.
 All 17 survey outcomes and all specified restrictions are retained below. See the
-[decision record](recent-cohort-protocol.md) and [complete output](../results/recent/estimates.csv).
+[decision record](methods.md#cohort-restrictions) and [complete output](../results/recent/estimates.csv).
 
 ## 1. The high early rates are real summaries of the deposited variables
 
@@ -32,9 +31,9 @@ Both shared tenure and unopposed selection happen to have 63 positive observatio
 unopposed selection and 27 the reverse. [Yearly counts](../results/recent/yearly-counts.csv)
 and [early cross-tab](../results/recent/early-cross-tab.csv).
 
-The [survey item](variable-dictionary.md) includes **past or planned tenure sharing**. Consequently,
+The [survey item](data-dictionary.md) includes **past or planned tenure sharing**. Consequently,
 41.8% is not evidence that 41.8% of the interviewed presidents had already resigned.
-The counts establish neither fabrication nor substantive validity of every response.
+The counts reproduce the analytical variables; individual responses cannot be validated from this release.
 Raw construction files and the separate response categories remain unavailable.
 
 The within-indirect decline is about 32 percentage points for both tenure measures, while

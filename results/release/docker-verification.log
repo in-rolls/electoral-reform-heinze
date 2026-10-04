@@ -1,31 +1,4 @@
-docker run --rm -v "/Users/soodoku/Documents/GitHub/in-rolls/heinze-electoral-reform:/audit" -w /audit python:3.14 bash -c 'pip install -r requirements-dev.txt && make ci-python'
-Unable to find image 'python:3.14' locally
-3.14: Pulling from library/python
-688faa5c505e: Pulling fs layer
-8dbc42934ae5: Pulling fs layer
-509699aefca8: Pulling fs layer
-edb4e1e7a400: Pulling fs layer
-49808fbe9b49: Pulling fs layer
-ccd9dba13ae3: Pulling fs layer
-1a48a960533f: Pulling fs layer
-688faa5c505e: Download complete
-dc16354c95ab: Download complete
-edb4e1e7a400: Download complete
-1420c867ee6c: Download complete
-49808fbe9b49: Download complete
-8dbc42934ae5: Download complete
-1a48a960533f: Download complete
-ccd9dba13ae3: Download complete
-ccd9dba13ae3: Pull complete
-1a48a960533f: Pull complete
-8dbc42934ae5: Pull complete
-509699aefca8: Download complete
-edb4e1e7a400: Pull complete
-509699aefca8: Pull complete
-688faa5c505e: Pull complete
-49808fbe9b49: Pull complete
-Digest: sha256:1ae5b32b33f502335ed9f5ee7afa4387192e9566b1328fc66da836c77c1cfb65
-Status: Downloaded newer image for python:3.14
+docker run --rm -v "/Users/soodoku/Documents/GitHub/in-rolls/electoral-reform-heinze:/audit" -w /audit python:3.14 bash -c 'pip install -r requirements-dev.txt && make ci-python'
 Collecting black==26.5.1 (from -r requirements-dev.txt (line 1))
   Downloading black-26.5.1-py3-none-any.whl.metadata (95 kB)
 Collecting isort==8.0.1 (from -r requirements-dev.txt (line 2))
@@ -66,7 +39,7 @@ Installing collected packages: pytokens, pyflakes, pycodestyle, platformdirs, pa
 
 Successfully installed black-26.5.1 click-8.5.0 flake8-7.3.0 isort-8.0.1 mccabe-0.7.0 mypy-extensions-1.1.0 packaging-26.3 pathspec-1.1.1 platformdirs-4.12.3 pycodestyle-2.14.0 pyflakes-3.4.0 pytokens-0.4.1
 WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager, possibly rendering your system unusable. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv. Use the --root-user-action option if you know what you are doing and want to suppress this warning.
-python3 analysis/preserve.py
+python3 scripts/preserve.py
 Verified 113 deposited files, archive bytes, and four sources.
 cd sources/institutions && shasum -a 256 -c SHA256SUMS
 act-ii-2020.pdf: OK
@@ -95,13 +68,13 @@ test_latest_period_does_not_manufacture_independent_support (test_recent.RecentC
 test_primary_restriction_equals_existing_transition (test_recent.RecentCohortTests.test_primary_restriction_equals_existing_transition) ... ok
 
 ----------------------------------------------------------------------
-Ran 16 tests in 0.127s
+Ran 16 tests in 0.132s
 
 OK
-python3 -m black --check analysis/*.py tests
+python3 -m black --check scripts/*.py tests
 All done! ✨ 🍰 ✨
-8 files would be left unchanged.
-python3 -m isort --profile black --check-only analysis/*.py tests
-python3 -m flake8 analysis/*.py tests
-python3 analysis/write_readme.py --check
+9 files would be left unchanged.
+python3 -m isort --profile black --check-only scripts/*.py tests
+python3 -m flake8 scripts/*.py tests
+python3 scripts/write_readme.py --check
 README numerical tables match analysis outputs.

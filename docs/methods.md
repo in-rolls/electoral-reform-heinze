@@ -1,8 +1,8 @@
-# Dependence and election-cohort diagnostics
+# Methods and diagnostic scope
 
 The unadjusted differences reproduce, but several significance claims depend on treating councils elected in the same month as independent. Exact election-month fixed effects cannot identify treatment: all 49 observed election month-year cells are treatment-pure. These checks do not establish that month clustering is the uniquely correct variance model, or that cohort adjustment identifies an electoral-reform effect.
 
-Run `Rscript analysis/inference.R` from the repository root. Inputs are the untouched analysis CSVs. All numbers below are computed in `results/inference/`; outcome differences are direct minus indirect. Baseline estimates reproduce the authors' `original/code/helpers.R::run_regressions`: HC2 for elite/admin outcomes and GP-cluster CR2 for citizen outcomes. The latter retain respondent weighting and do not turn purposive informants into a population sample.
+Run `Rscript scripts/inference.R` from the repository root. Inputs are the untouched analysis CSVs. All numbers below are computed in `results/inference/`; outcome differences are direct minus indirect. Baseline estimates reproduce the authors' `original/code/helpers.R::run_regressions`: HC2 for elite/admin outcomes and GP-cluster CR2 for citizen outcomes. The latter retain respondent weighting and do not turn purposive informants into a population sample.
 
 ## What dependence changes
 
@@ -58,8 +58,76 @@ Removing January 2021 makes the president shared-tenure gap more negative (−30
 
 The released analysis files lack district/taluka identifiers and survey dates. The admin file additionally lacks election and record dates and GP identifiers. District/taluka fixed effects, geography clustering, geography leaveouts, and administrative exposure adjustment cannot be performed from these files. Numeric ID prefixes are not validated geographic codes. In particular, GP × month nesting does not substitute for taluka × month inference.
 
-The admin HC2 baseline reproduces −13.751 pp (N=1,366, SE 1.695 pp), but this is a cumulative binary comparison with unknown exposure duration. No survival or rate estimate is fabricated. The raw file has 1,425 rows; estimation requires both nonmissing outcome and treatment.
+The admin HC2 baseline reproduces −13.751 pp (N=1,366, SE 1.695 pp), but this is a cumulative binary comparison with unknown exposure duration. A survival or rate estimate requires those dates. The raw file has 1,425 rows; estimation requires both nonmissing outcome and treatment.
 
 Local validation checks raw means against coefficients, citizen joins without row loss, bootstrap sample/draw counts, independent agreement between `estimatr` CR2 and `clubSandwich` Satterthwaite results, rank failure, nested covariance identity, and complete finite output. `results/inference/validation.txt` records success; `lint.log` records default `lintr` validation. Software versions are in `session-info.txt`.
 
 APIs were checked against official documentation: [estimatr `lm_robust`](https://declaredesign.org/r/estimatr/reference/lm_robust.html), [fwildclusterboot `boottest.lm`](https://s3alfisc.github.io/fwildclusterboot/reference/boottest.lm.html), [clubSandwich `coef_test`](https://jepusto.github.io/clubSandwich/reference/coef_test.html), and the installed `sandwich::vcovCL` manual (the official web endpoint timed out). Both R's and dqrng's random generators are seeded, as required for the chosen bootstrap engine.
+
+
+## Scope and data limits
+
+The audit covers all 18 headline observational outcomes: 17 survey measures and the
+separate administrative resignation indicator. Raw means, denominators, missingness and
+original-method uncertainty are in [raw-means.csv](../results/audit/raw-means.csv).
+Council identifiers are unique, and the citizen-to-council join preserves all 3,658
+respondents. Missing outcomes are excluded rather than recoded as zero. Citizen results
+use purposively selected informants; [equal-council weighting](../results/audit/citizen-equal-gp-weight.csv)
+is a separate descriptive estimand.
+
+Control-group levels are interpreted independently of model sensitivity. Early indirect
+shared tenure is 66/158 (41.77%), versus 20/211 (9.48%) in later indirect councils.
+The within-regime difference requires a timing, measurement or institutional account;
+its size alone does not establish an error. Unopposed reports remain near 40% in both
+indirect cohorts. The [cohort results](cohorts.md) distinguish these patterns from changes
+in the direct cohort.
+
+The release contains constructed observational variables, without original responses or
+their cleaning program. The separate vignette includes raw data and cleaning code.
+Unreleased interview dates, original council term starts, event/censoring dates and
+geographic identifiers prevent equal-exposure comparisons, geography clustering and
+geography fixed effects. Meeting attendance and full actor responses are also unavailable.
+The [data dictionary](data-dictionary.md) identifies the missing fields for each measure.
+
+## Exploratory diagnostic choices
+
+The audit diagnostics were selected after inspecting the published results. They are
+exploratory and are not a preregistration. The [diagnostics](diagnostics.md) retain all
+17 original sensitivity models and 51 gender-quota bounds, both treatment-side and
+outcome-side associations, and equal-strength robustness values. No alternative benchmark
+was selected to obtain a preferred conclusion. These ordinary linear-model sensitivity
+calculations do not inherit the main models' robust or clustered standard errors.
+
+The five authority comparisons within SC-reserved councils and all direct treatment-by-SC
+interaction tests are retained. Within-SC gains test whether the observed pattern requires
+Maratha officeholding; they do not isolate class selection, mediation, or amplification
+by reservation. The experiment reconciliation retains all six planned contrasts, adjusted
+and unadjusted, and distinguishes raw, assigned, observed-outcome and adjusted samples.
+
+The experimental balance check was added after inspecting Table F.3's large HC2 joint
+statistics. All four condition regressions are shown with original HC2, ordinary F tests,
+and a diagnostic exclusion of seven respondents in sparse religion categories. Their
+exclusion localizes the statistic; substantive estimates retain all eligible respondents.
+The respondent-gender contingency imbalance is also reported. Neither this sensitivity
+nor a nonsignificant balance test verifies assignment implementation.
+
+## Cohort restrictions
+
+Existing transition estimates and raw tabulations were inspected before the recent-cohort
+comparisons were specified. The analysis retains all 17 survey outcomes for five rules:
+all direct councils plus indirect councils elected in 2020 or later; then elections from
+2018, 2019, 2020 and 2021 onward in both regimes. The first is the paper's later-transition
+contrast. Each subsequent cutoff narrows the calendar window and reduces direct support.
+
+Inference is withheld when either arm has fewer than two observed councils. Multiple
+citizen respondents from one council cannot supply additional independent councils.
+Supported comparisons retain original-method HC2/GP-CR2, election-month CR2 and the
+null-imposed wild bootstrap with 9,999 requested Rademacher draws, seed 20261003.
+Actual draw counts, cluster counts and effective degrees of freedom are reported.
+All outcomes are retained regardless of sign or significance. No multiplicity-adjusted
+confirmatory interpretation is claimed.
+
+These restrictions concern the recorded incumbent's election year, not interview waves,
+verified term starts or equal time at risk. Administrative records lack the necessary dates
+and are excluded from these restrictions. The yearly counts and shared-tenure/unopposed
+cross-tab check the early rates without assuming that a surprising rate is a coding error.

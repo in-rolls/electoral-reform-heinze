@@ -1,4 +1,4 @@
-# Run from the repository root with Rscript analysis/run_authors.R.
+# Run from the repository root with Rscript scripts/run_authors.R.
 args <- commandArgs(trailingOnly = FALSE)
 script_arg <- sub("^--file=", "", args[grepl("^--file=", args)])
 root <- normalizePath(file.path(dirname(script_arg), ".."))

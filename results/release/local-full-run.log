@@ -1,4 +1,4 @@
-python3 analysis/preserve.py
+python3 scripts/preserve.py
 Verified 113 deposited files, archive bytes, and four sources.
 cd sources/institutions && shasum -a 256 -c SHA256SUMS
 act-ii-2020.pdf: OK
@@ -8,22 +8,22 @@ cd sources/preregistration && shasum -a 256 -c SHA256SUMS
 analysis-plan.pdf: OK
 registration.json: OK
 file-metadata.json: OK
-Rscript analysis/run_authors.R > results/authors/latest-run.log 2>&1
-Rscript analysis/audit.R
+Rscript scripts/run_authors.R > results/authors/latest-run.log 2>&1
+Rscript scripts/audit.R
 Audit complete: means, denominators, cohorts, bounds, categories and figures.
-Rscript analysis/inference.R > results/inference/latest-run.log 2>&1
-Rscript analysis/critical_diagnostics.R > results/critical/latest-run.log 2>&1
-python3 analysis/write_assessment.py
-Rscript analysis/recent_cohorts.R > results/recent/latest-run.log 2>&1
-python3 analysis/write_recent.py
-python3 analysis/write_note.py
-python3 analysis/write_readme.py
-python3 -m black --check analysis/*.py tests
+Rscript scripts/inference.R > results/inference/latest-run.log 2>&1
+Rscript scripts/critical_diagnostics.R > results/critical/latest-run.log 2>&1
+python3 scripts/write_assessment.py
+Rscript scripts/recent_cohorts.R > results/recent/latest-run.log 2>&1
+python3 scripts/write_recent.py
+python3 scripts/write_note.py
+python3 scripts/write_readme.py
+python3 -m black --check scripts/*.py tests
 All done! ✨ 🍰 ✨
-8 files would be left unchanged.
-python3 -m isort --profile black --check-only analysis/*.py tests
-python3 -m flake8 analysis/*.py tests
-Rscript -e 'x <- unlist(lapply(list.files("analysis", "[.]R$", full.names=TRUE), lintr::lint), recursive=FALSE); print(x); if(length(x)) quit(status=1)'
+9 files would be left unchanged.
+python3 -m isort --profile black --check-only scripts/*.py tests
+python3 -m flake8 scripts/*.py tests
+Rscript -e 'x <- unlist(lapply(list.files("scripts", "[.]R$", full.names=TRUE), lintr::lint), recursive=FALSE); print(x); if(length(x)) quit(status=1)'
 list()
 python3 -m unittest discover -s tests -v
 test_admin_exclusions_are_not_zeros (test_audit.AuditTests.test_admin_exclusions_are_not_zeros) ... ok
@@ -44,6 +44,6 @@ test_latest_period_does_not_manufacture_independent_support (test_recent.RecentC
 test_primary_restriction_equals_existing_transition (test_recent.RecentCohortTests.test_primary_restriction_equals_existing_transition) ... ok
 
 ----------------------------------------------------------------------
-Ran 16 tests in 0.120s
+Ran 16 tests in 0.119s
 
 OK

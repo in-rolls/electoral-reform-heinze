@@ -1,18 +1,6 @@
 """Generate the concise audit note from verified numerical outputs."""
 
-import csv
-from pathlib import Path
-
-ROOT = Path(__file__).resolve().parents[1]
-
-
-def rows(path):
-    with (ROOT / path).open(newline="") as stream:
-        return list(csv.DictReader(stream))
-
-
-def pct(value, digits=2):
-    return f"{100 * float(value):.{digits}f}"
+from report_utils import ROOT, pct, rows
 
 
 def main():
@@ -82,9 +70,9 @@ def main():
     delta = transitions["resignation", "early_vs_late"]
     speech = authority["prop_speakingtime_sarpanch", "all"]
     influence = authority["most_influential_gd", "all"]
-    note = f"""# Audit of Heinze, *Democratic Deepening or Elite Persistence?*
+    note = f"""# Electoral reform: numerical audit
 
-The [follow-up private assessment](private-assessment.md) examines the broader causal
+The [interpretation of the evidence](interpretation.md) examines the broader causal
 argument, statutory changes, sensitivity calibration and preregistration. This note
 retains the original four-section numerical audit and its verification boundaries.
 
@@ -108,7 +96,7 @@ cells** and **161 checked labels in main Figures 3–6**. All 12 deposited figur
 Figure 2's underlying election counts are exported; exhaustive numerical recovery from its
 unlabelled bars and the appendix rasters is not claimed. R 4.6.0 was available, versus the
 author's 4.4.3; missing packages were installed locally, with no author-code edits.
-[Execution record and coverage](execution.md).
+[Execution record and coverage](reproduction.md).
 
 | Variable | Published, % (Figures 4–5) | Replicated indirect → direct, % | Observed N, indirect / direct |
 |---|---:|---:|---:|
@@ -148,7 +136,7 @@ stage. The observed diagnostic is the mismatch between question and claimed cons
 raw stage, reporter-validation and landowner-status fields are absent. These data do not
 identify corrected “total elite influence” or comparable-stage competition rates.
 The paper acknowledges an alternative explanation for uncontested elections.
-[Exact questions, categories and source locations](variable-dictionary.md).
+[Exact questions, categories and source locations](data-dictionary.md).
 
 **Unresolved timing provenance.** Appendix C.8 describes January 2020 implementation;
 the government's February bulletin still describes a prospective ordinance, and the
@@ -210,7 +198,7 @@ The two wild p-values near .055 are borderline (Monte Carlo SE about .0023), not
 of no association. Citizen shared tenure is procedure-sensitive. The 49 uneven month
 clusters are not the 25 talukas; geographic IDs are unavailable. GP × month clustering
 is redundant because GPs nest within months. Every single-month deletion preserves
-the original coefficient signs. [Full inference and support diagnostics](inference.md).
+the original coefficient signs. [Full inference and support diagnostics](methods.md).
 
 **Repeated questions limit independent validation.** The published citizen authority gains
 of +8.2/+13.2 pp and outsider declines of −5.2/−5.7 pp reproduce as +8.164/+13.169 and
@@ -227,9 +215,9 @@ as −13.751 pp for `resigned`, but no election, resignation or record dates are
 `months_at_risk` cannot be constructed. Summer-2022 collection and the reform timeline
 could imply *longer* exposure for direct councils if those dates map to ongoing terms;
 “direct had less time” is not established. Likewise, no survey dates are released, so a
-single assumed endpoint for the 2020–22 survey would fabricate exposure. Full actor
+single assumed endpoint for the 2020–22 survey would assign unverified exposure durations. Full actor
 distributions, geographic FE/clustering/leaveouts and full citizen multinomial categories
-also remain unavailable. [Precise missing artifacts](measurement-review.md).
+also remain unavailable. [Precise missing artifacts](data-dictionary.md).
 
 ## D. Claims that remain supported after the audit
 
@@ -261,7 +249,7 @@ total elite control, institutional mediation, or equal-exposure resignation risk
 vignette supports an effect of assigned caste/gender cues on hypothetical authority
 judgments; the paper itself concedes it is not a mediation test of electoral reform.
 """
-    (ROOT / "docs/audit-note.md").write_text(note)
+    (ROOT / "docs/audit.md").write_text(note)
 
 
 if __name__ == "__main__":

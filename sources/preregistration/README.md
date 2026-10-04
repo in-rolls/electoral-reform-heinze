@@ -12,4 +12,4 @@ Public sources downloaded for the follow-up audit; no authentication or third-pa
 `SHA256SUMS` preserves the original downloads. The PDF digest also matches the SHA-256
 recorded inside `registration.json`, independently tying the bytes to the registration.
 Registration date and declared data-access timing are reviewed in
-[preregistration-review.md](../../docs/preregistration-review.md).
+[registration audit](../../docs/registration.md).

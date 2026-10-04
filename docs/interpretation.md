@@ -1,4 +1,4 @@
-# Private assessment: what Heinze's evidence establishes
+# Electoral reform: interpretation of the evidence
 
 **The paper establishes meaningful empirical patterns and documents elite adaptation in
 particular villages. It does not establish its broad conclusion that direct elections
@@ -12,11 +12,11 @@ tables and the checked main-figure labels reproduce. The strongest objections co
 meaning of capture, what the reform changed, and what the design separates. They do not
 depend on finding an arithmetic failure or making every coefficient insignificant.
 
-This assessment extends the [four-section numerical audit](audit-note.md), rather than
-superseding its results. The [claim ledger](claim-ledger.md) records the paper's defenses
+This assessment extends the [four-section numerical audit](audit.md), rather than
+superseding its results. The [claim ledger](claims.md) records the paper's defenses
 and the evidence behind each verdict. New checks follow the
-[diagnostic decision record](critical-analysis-protocol.md); complete numerical results are
-in the [diagnostic tables](critical-diagnostics.md). Page references below use the printed
+[diagnostic decision record](methods.md#exploratory-diagnostic-choices); complete numerical results are
+in the [diagnostic tables](diagnostics.md). Page references below use the printed
 pages of the [paper](../sources/paper.pdf) and [appendix](../sources/appendix.pdf).
 
 ## 1. Elite representation does not establish persistent capture
@@ -39,12 +39,12 @@ paper need not construct a single capture index or claim an exact numerical offs
 the joint pattern alone cannot discriminate persistent capture from more accountable elite
 leadership, or establish that democratic deepening has failed.
 
-The author's strongest answer is the qualitative evidence. The main cases and Appendix E
+The strongest supporting evidence is qualitative. The main cases and Appendix E
 describe coercion, proxy selection, dynastic continuity, silenced citizens, and concrete
 decisions favoring powerful people. In Shelgaon, the direct president comes from the
 established ruling family; Appendix E also describes a family that influenced politics
 before holding the direct presidency. These are substantive observations of the proposed
-process. It would be false to say the paper has no evidence of established elites adapting.
+process. These cases document established elites adapting.
 
 But the seven 2024 comparison councils come from one Pune block, with one initial random
 selection and nearby matched cases thereafter (Appendix A, pp.4–5). That is useful for
@@ -134,12 +134,13 @@ The exact words and denominators matter more here than additional regression con
 
 The administrative result is harder evidence of filed events:
 19.31% versus
-5.56%. Its exposure problem remains unresolved, but it
-would be wrong to assume direct councils necessarily had less time at risk. Their terms
+5.56%. Its exposure problem remains unresolved.
+Direct councils are not shown to have less time
+at risk; their terms
 could be older under the reform timeline. **Verdict: several specific differences are
 credible; their translation into comparable measures of informal and total capture is
 not established.** Exact items, variables and full arithmetic are in the
-[dictionary](variable-dictionary.md) and [existing audit](audit-note.md).
+[dictionary](data-dictionary.md) and [existing audit](audit.md).
 
 ## 4. The sensitivity reassurance uses a weakly justified benchmark
 
@@ -202,9 +203,9 @@ before the author received data. Its timing is disclosed. The sample also reconc
 2347 valid authority answers, and
 2341 adjusted observations. An apparent sample-size error is rejected.
 The preregistered exploratory qualitative follow-up answers are not released, so complete
-compliance cannot be verified. [Preserved plan and comparison](preregistration-review.md).
+compliance cannot be verified. [Preserved plan and comparison](registration.md).
 
-The experiment should not be described as perfectly balanced. Table F.3's extreme joint
+The experiment has some realized covariate imbalance. Table F.3's extreme joint
 tests are sensitive to seven respondents in sparse religion categories: excluding these
 respondents solely as a diagnostic changes the two Maratha-cell HC2 F statistics from
 12.792/20.059 to 1.068/
