@@ -33,7 +33,7 @@ Directly elected presidents have higher observed speaking shares and are more of
 
 Shared-tenure reports differ substantially between the two indirect-election cohorts, while unopposed-selection reports are similar. The tenure question includes both previous and planned sharing; it is not a completed-resignation rate. Early indirect includes five early-2017 councils; later indirect refers to elections in 2020 or 2021. Both transition comparisons use the same direct-election cohort.
 
-Restricting election cohorts reduces the shared-tenure and most-influential contrasts. Speaking shares and citizen-reported event leadership remain higher, and unopposed-selection reports remain lower, among direct presidents in the recent comparisons. The 2019-onward sample has only 27 direct councils versus 211 indirect councils. [All 17 outcomes, counts and confidence intervals](docs/cohorts.md).
+Removing early indirect councils reduces the shared-tenure contrasts; also removing older direct councils reduces the most-influential contrast. Speaking shares and citizen-reported event leadership remain higher, and unopposed-selection reports remain lower, among direct presidents in the recent comparisons. The 2019-onward sample has only 27 direct councils versus 211 indirect councils. [All 17 outcomes, counts and confidence intervals](docs/cohorts.md).
 
 ## Measurement and coverage
 

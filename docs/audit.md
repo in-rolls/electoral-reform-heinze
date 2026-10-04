@@ -115,8 +115,8 @@ year FE, so adjustment does not uniformly erase the findings.
 167/234 direct, 209/211 late indirect**; all 142 councils elected in 2015 lack it.
 Indirect/direct missingness is 41.89%/28.63% (Pearson p=.00135), with much stronger cohort
 imbalance. The early comparison is +14.90 pp, SE 12.56 pp; the late comparison remains
-+15.43 pp, SE 3.07 pp. The late-cohort association is positive; two equally
-informative transition replications do not. Without assumptions about missing values,
++15.43 pp, SE 3.07 pp. The late-cohort association is positive; the early-transition comparison has much less observed
+support. Without assumptions about missing values,
 the full-sample descriptive difference is bounded by **[-27.06, 43.46] pp**,
 using only the measure's [0,1] support. These are identification bounds, not a confidence
 interval. The measure is a bureaucrat's approximate assessment, not land-register acreage.
